@@ -1,0 +1,239 @@
+@import "../../constants/constant.scss";
+
+.contact-section {
+  padding: 120px 6vw;
+  .pagination {
+    margin-left: -20px;
+    margin-top: 50px;
+
+    .page-item {
+      &.active {
+        .page-link {
+          background: $orange;
+          color: $white;
+        }
+      }
+
+      &:first-child,
+      &:last-child {
+        .page-link {
+          background: transparent;
+        }
+      }
+    }
+
+    .page-link {
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      box-shadow: none;
+      margin: 0 2px;
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 30px;
+      color: $gray;
+      transition: $transition;
+
+      &:hover {
+        background: $orange;
+        color: $white !important;
+      }
+
+      &.dots {
+        &:hover {
+          background: transparent;
+          cursor: auto;
+          color: $gray;
+        }
+      }
+    }
+  }
+  .container-fluid {
+    .contact-info {
+      .phone-info {
+        &-tel {
+          margin-left: 40px;
+        }
+      }
+      h3 {
+        color: $green;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 48px;
+        font-family: Prompt-bold, sans-serif !important;
+        margin-bottom: 16px;
+        margin-top: 30px;
+      }
+
+      .email-info {
+        h3 {
+          margin-top: 0;
+        }
+      }
+
+      p,
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $gray;
+        font-family: Prompt-Regular, sans-serif !important;
+      }
+
+      a {
+        text-decoration: none;
+        transition: $transition;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+
+    .contact-title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 48px;
+      font-family: Prompt-Bold, sans-serif;
+      color: $orange;
+    }
+
+    .contact-subtitle {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 27px;
+      font-family: Promt-Thin, sans-serif;
+      color: $green;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      .form-control {
+        &.error {
+          &::placeholder {
+            color: $red !important;
+          }
+        }
+        &:not(&:nth-child(1)),
+        &:not(&:nth-child(2)) {
+          margin-top: 20px;
+        }
+        border: 2px solid $green;
+        box-sizing: border-box;
+        border-radius: 20px;
+        box-shadow: none;
+        outline: none;
+        padding: 10px 40px;
+        text-shadow: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: Prompt-Regular, sans-serif;
+        color: #8a8a8a;
+      }
+
+      textarea.form-control {
+        resize: none;
+        height: 113px;
+      }
+      .error-text {
+        color: $red;
+        padding-left: 40px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+      }
+      .btn-submit {
+        @include btn-style($green, $white, 100%, 40px);
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.contact-section .slider {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 587px;
+}
+
+@media screen and (max-width: 490px) {
+  .contact-section .slider {
+    width: 350px;
+  }
+}
+
+.contact-section .slider .wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 0.3s linear;
+}
+
+.contact-section .slider .wrapper .wrapper-item {
+  min-width: 100%;
+}
+
+.contact-section .slider .controller-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-left: -40px;
+}
+
+.contact-section .slider .controller-wrapper .controller {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+
+.contact-section .slider .controller-wrapper .controller .controller-item {
+  display: flex;
+  width: 54px;
+  height: 54px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #cfcfcf;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+  font-family: Prompt-Medium, sans-serif;
+  margin-right: 5px;
+  transition: all 0.3s linear;
+}
+
+.contact-section .slider .controller-wrapper .controller .controller-item:hover {
+  background: $orange;
+  color: $white;
+}
+
+.contact-section .slider .controller-wrapper .controller-prev,
+.contact-section .slider .controller-wrapper .controller-next {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contact-section .slider .controller-wrapper .controller .controller-item.active {
+  background: $orange;
+  color: $white;
+}

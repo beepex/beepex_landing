@@ -1,0 +1,826 @@
+@import "../../constants/constant";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Prompt-Regular, sans-serif;
+  overflow-x: hidden;
+  letter-spacing: 0.5px;
+}
+
+.sm-visible {
+  &-flex {
+    display: none !important;
+  }
+
+  display: none !important;
+}
+
+/********************************************* Navbar Start *********************************************/
+.main-nav {
+  min-height: 130px;
+  width: 100%;
+  background: $cornsilk;
+
+  .navbar-brand {
+    a {
+      position: absolute;
+      top: 20px; // sonradan elave olundu
+      left: 6vw;
+      z-index: 3;
+      img {
+        width: 96px; // sonradan elave olundu
+        height: 93px; // sonradan elave olundu
+      }
+    }
+  }
+
+  .cargo-info {
+    background: $green;
+    height: 65px;
+    border-radius: 0 0 0 40px;
+    color: $white;
+    padding: 10px 110px 10px 50px;
+    @include font14(400);
+
+    &-text {
+      white-space: nowrap;
+    }
+
+    .langLogin {
+      display: flex !important;
+
+      &.active {
+        display: none !important;
+      }
+    }
+
+    .link-login {
+      max-width: 150px;
+      white-space: nowrap;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .link-login,
+    .link-phone {
+      color: $white;
+      text-decoration: none;
+      padding: 0 10px;
+      transition: $transition;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    .link-login {
+      margin-right: 30px;
+    }
+
+    .dropdown-language {
+      .btn {
+        background: transparent;
+        box-shadow: none;
+        white-space: nowrap;
+      }
+
+      .dropdown-menu {
+        min-width: 42px;
+        height: 95px;
+        background: $green;
+        border: none;
+        border-radius: 10px;
+
+        .dropdown-item {
+          color: $white;
+          text-align: center;
+          padding: 3px 15px;
+          @include font14(400);
+          transition: $transition;
+
+          &:hover {
+            color: $orange;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-bottom {
+    height: 70px;
+    padding: 15px 110px 23px 60px;
+
+    .nav-links {
+      .navbar-nav {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-link {
+          color: $gray;
+          transition: $transition;
+
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+
+    .dropdown-add {
+      .btn {
+        @include btn-style(transparent, $green, 190px, 40px);
+        border: 2px solid;
+        padding: 6px;
+        background: url("../../../../assets/svgs/down-caret.svg") 75% 50% no-repeat;
+      }
+
+      .dropdown-menu {
+        min-width: 100%;
+        min-height: 150px;
+        background: transparent;
+        border: none;
+
+        .dropdown-item {
+          @include btn-style($green, $white, 190px, 40px);
+          margin-bottom: 10px;
+          transition: $transition;
+
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+
+    .responsive-menu {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+
+      .footer-bottom {
+        background: $green;
+        border-radius: 50px 0 0 0;
+        height: 54px;
+        position: absolute;
+        bottom: 0;
+        left: 13vw;
+        width: 90vw;
+        padding: 15px 9vw 15px 36px !important;
+
+        .social-media {
+          width: 180px;
+
+          ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            li {
+              list-style: none;
+
+              .social-link {
+                color: $white;
+                font-size: 18px;
+                transition: $transition;
+                padding: 10px;
+                margin-bottom: 10px;
+
+                &:hover {
+                  color: $orange;
+                }
+              }
+            }
+          }
+        }
+
+        .copyright {
+          @include font16(400);
+          color: $white;
+          font-size: 12px;
+          font-family: Prompt-Regular, sans-serif;
+        }
+      }
+
+      .btn-menu {
+        @include btn-style(transparent, $gray, 190px, 40px);
+        margin: 5px 0 0 50px;
+      }
+
+      &-dropdown {
+        background: $cornsilk;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        height: calc(100vh - 130px);
+        z-index: 5;
+        width: 105%;
+        display: none;
+
+        .navbar-nav {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 92px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+          font-family: Prompt-Regular, sans-serif;
+
+          .nav-link {
+            margin: 10px 0 0 50px;
+
+            .nav-item {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/********************************************* Navbar End *********************************************/
+
+/********************************************* Shipping Price Start *********************************************/
+
+.shipping-price-section {
+  .shipping-title {
+    @include font32(700);
+    color: $orange;
+    text-align: center;
+  }
+
+  .tariffs {
+    color: $green;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .nav-pills#countries-tab {
+    border: 2px solid $orange;
+    border-radius: 700px;
+    margin-top: 40px;
+
+    .nav-item {
+      .nav-link {
+        @include btn-style($white, $green, 190px, 40px);
+        transition: $transition;
+        margin: 0;
+
+        &.active {
+          background: $orange;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .isLiquid {
+    width: 380px;
+    margin-top: 10px;
+    color: $gray;
+    @include font16(400);
+    user-select: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    .label_text {
+      margin-left: 15px;
+    }
+
+    .custom-checkbox {
+      margin-right: 10px;
+      box-shadow: none;
+      color: $orange;
+      border: none;
+      outline: none;
+      appearance: none;
+
+      ~ .checkbox {
+        width: 16px;
+        height: 16px;
+        background: #f9f6f1;
+        border: 1px solid $green;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transition: $transition;
+      }
+
+      &:checked ~ .checkbox {
+        background: $green;
+      }
+    }
+  }
+
+  .tab-content {
+    margin: 45px 0 100px 0;
+    padding: 0 100px;
+
+    .shipping-card {
+      background: $cornsilk;
+      height: 200px;
+      padding: 50px 40px;
+      box-shadow: 5px 10px 0 $green;
+      border-radius: 10px;
+      margin-bottom: 30px;
+
+      .shipping-price {
+        color: $green;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 38px;
+      }
+
+      .divider {
+        height: 1px;
+        background: $orange;
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .shipping-weight {
+        @include font16(400);
+        color: $gray;
+      }
+    }
+  }
+}
+
+/********************************************* Shipping Price End *********************************************/
+
+/********************************************* Work Principle Start *********************************************/
+
+.work-principle-section {
+  padding: 20px 150px;
+  margin-bottom: 100px;
+
+  .principle-title {
+    color: $orange;
+    font-weight: 700;
+    @include font32(700);
+  }
+
+  .principle-subtitle {
+    color: $green;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 84px;
+  }
+
+  .principle-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .card-img-cover {
+      min-height: 50px;
+      margin-bottom: 40px;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .principle-card-info {
+      text-align: center;
+      @include font16(400);
+      color: $gray;
+      flex: 1;
+      min-height: 50px;
+    }
+  }
+}
+
+/********************************************* Work Principle End *********************************************/
+
+/********************************************* Carousel Start *********************************************/
+
+.carousel-wrapper {
+  margin: 120px 0 0;
+  background: $cornsilk;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+}
+
+/********************************************* Carousel End *********************************************/
+
+/********************************************* News Start *********************************************/
+
+.news-section {
+  padding: 0 100px 130px 100px;
+
+  &.news-page {
+    padding: 120px 100px 90px 100px;
+
+    .news-cards {
+      column-count: 3;
+      column-gap: 20px;
+    }
+  }
+
+  .news-title {
+    color: $orange;
+    @include font32(700);
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .news-subtitle {
+    color: $green;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .news-card {
+    padding: 50px;
+    background: #f9f6f1;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 10px 0 #58d1b7;
+    box-shadow: 5px 10px 0 #58d1b7;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    margin: 0 5px 30px 0;
+    display: inline-block;
+
+    &:hover {
+      transform: scale(1.02);
+      border: 1px solid $green;
+    }
+
+    .news-card-title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 38px;
+      color: $gray;
+      text-overflow: ellipsis;
+      margin-bottom: 40px;
+    }
+
+    .news-card-info {
+      @include font16(400);
+      color: $gray;
+      text-overflow: ellipsis;
+      margin-bottom: 50px;
+    }
+
+    .news-card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .release-date {
+        color: $orange;
+        @include font16(400);
+      }
+
+      .btn {
+        border-radius: 50%;
+        @include btn-style($green, $white, 41px, 41px);
+      }
+    }
+  }
+}
+
+.news-detail-section {
+  padding: 120px 100px;
+
+  .title {
+    color: $orange;
+    @include font32(700);
+    font-family: Prompt-Bold, sans-serif;
+    margin-bottom: 7px;
+  }
+
+  .news-detail {
+    margin-bottom: 50px;
+
+    .release-date {
+      margin-bottom: 30px;
+      color: $green;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 80px;
+    }
+
+    .info {
+      margin-left: 105px;
+      margin-right: 100px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: $gray;
+      text-align: justify;
+    }
+  }
+}
+
+/********************************************* News End *********************************************/
+
+/********************************************* Footer Start *********************************************/
+
+.main-footer {
+  min-height: 478px;
+  background: $cornsilk;
+  background-origin: border-box;
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+
+  .footer-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    margin: 0 0 0 90px;
+    display: inline-block;
+    padding: 10px;
+    flex: 1;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 7;
+
+    .footer-links {
+      flex: 1.5;
+
+      &:first-child {
+        margin-left: 80px;
+      }
+
+      .footer-list-group {
+        &.__item {
+          list-style: none;
+          margin-bottom: 16px;
+
+          .footer-link {
+            color: $gray;
+            text-decoration: none;
+            padding: 8px 10px;
+            display: inline-block;
+            transition: $transition;
+            width: 100%;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            &:hover {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-info-wrapper {
+      flex: 4;
+
+      .footer-info {
+        color: $gray;
+        @include font16(400);
+        margin-top: 8px;
+        font-family: Prompt-Regular, sans-serif !important;
+      }
+    }
+  }
+
+  .footer-info-link {
+    color: $gray;
+    text-decoration: none;
+    @include font16(400);
+    transition: $transition;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .footer-bottom {
+    background: $green;
+    border-radius: 40px 0 0 0;
+    height: 62px;
+    margin-top: 38px;
+    padding: 20px 100px;
+
+    .social-media {
+      width: 180px;
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        li {
+          list-style: none;
+
+          .social-link {
+            color: $white;
+            font-size: 22px;
+            transition: $transition;
+            padding: 10px;
+            margin-bottom: 10px;
+
+            &:hover {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+
+    .copyright {
+      @include font16(400);
+      color: $white;
+    }
+  }
+}
+
+/********************************************* Footer End *********************************************/
+
+// sonradan elave olundu
+
+/********************************************* Soon Start *********************************************/
+body.soon-body {
+  background: #e5e5e5;
+  color: #000;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../../fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../../fonts/Montserrat/Montserrat-ExtraBold.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+.soon-section {
+  padding: 60px 100px;
+  background-image: url(../../../../assets/svgs/soon.svg);
+  background-size: 567px 567px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 96px) 120px;
+  height: 100vh;
+
+  .navbar-brand {
+    img {
+      width: 85px;
+      height: 81px;
+    }
+  }
+
+  .soon-text {
+    margin-top: 190px;
+
+    &-heading {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 150px;
+      line-height: 183px;
+      color: #000000;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    &-small {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 37px;
+      color: #000000;
+      margin: 0;
+      max-width: 80%;
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .soon-section {
+    .soon-text {
+      &-heading {
+        line-height: 183px;
+        font-size: 120px;
+      }
+      &-small {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .soon-section {
+    .soon-text {
+      &-heading {
+        line-height: normal;
+        font-size: 120px;
+      }
+      &-small {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .soon-section {
+    padding: 60px 40px;
+
+    .navbar-brand {
+      position: static !important;
+    }
+    .soon-text {
+      &-heading {
+        font-size: 90px;
+      }
+      &-small {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .soon-section {
+    background-position: center 220px;
+    background-size: 100vw 100vw;
+
+    .soon-text {
+      margin-top: calc(100% / 5 -200px);
+      &-heading {
+        line-height: normal;
+        font-size: 70px;
+      }
+      &-small {
+        max-width: 100%;
+        font-size: 20px;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .soon-section {
+    .soon-text {
+      &-heading {
+        line-height: normal;
+        font-size: 55px;
+      }
+      &-small {
+        max-width: 100%;
+        font-size: 20px;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+/********************************************* Soon End *********************************************/

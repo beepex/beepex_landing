@@ -1,0 +1,151 @@
+@import "../../constants/constant.scss";
+
+.tariffs-container {
+    margin-top: 120px;
+    margin-bottom: 20px !important;
+    #countries-tab {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .tab-content {
+        margin: 45px 0 20px 0;
+    }
+    .select-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    &.internal {
+        padding: 0 100px;
+
+        #select_1 {
+            .ss-single-selected {
+                border: 2px solid $orange;
+            }
+            .ss-disabled {
+                color: #fff !important;
+            }
+
+            .placeholder {
+                color: $orange !important;
+            }
+            .ss-content {
+                background: $orange;
+                border: 2px solid $orange;
+            }
+        }
+        .ss-main {
+            padding: 0;
+            color: $green !important;
+            border-radius: 20px;
+            border: none;
+            z-index: 3;
+            width: 190px;
+            margin-right: 20px;
+
+            .ss-single-selected {
+                width: 190px;
+                height: 40px;
+                outline: none;
+                box-shadow: none;
+                border-radius: 20px;
+                border: 2px solid $green;
+
+                &.ss-open-above ~ .ss-content {
+                    padding: 10px 40px 30px 40px;
+                    border-radius: 20px 20px 0 0;
+                    top: 60px;
+                }
+
+                .ss-disabled {
+                    @include font14(400);
+                    color: $gray !important;
+                    padding: 0;
+                }
+
+                .placeholder {
+                    padding: 8px 0 8px 0;
+                    color: $green !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .ss-content {
+                background: $green;
+                top: 20px;
+                border-radius: 0 0 20px 20px;
+                border: 2px solid $green;
+                padding: 30px 20px 10px 20px;
+                z-index: -2;
+
+                .ss-list {
+                    max-height: 400px;
+                    text-align: center;
+
+                    &::-webkit-scrollbar {
+                        margin: 0;
+                        background: transparent;
+                        width: 3px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background: $orange;
+                    }
+                }
+
+                .ss-option {
+                    @include font14(400);
+                    color: white;
+
+                    &:hover {
+                        background: transparent;
+                    }
+
+                    &.ss-option-selected,
+                    &.ss-option-disabled {
+                        background: transparent;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .shipping-card {
+        background: $cornsilk;
+        height: 200px;
+        padding: 50px 40px;
+        box-shadow: 5px 10px 0 $green;
+        border-radius: 10px;
+        margin-bottom: 30px;
+
+        .shipping-price {
+            color: $green;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 38px;
+        }
+
+        .divider {
+            height: 1px;
+            background: $orange;
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .shipping-weight {
+            @include font16(400);
+            color: $gray;
+            margin: 0;
+        }
+        small {
+            font-size: 11px;
+            color: $gray;
+        }
+    }
+}

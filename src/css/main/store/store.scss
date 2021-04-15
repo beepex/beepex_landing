@@ -1,0 +1,113 @@
+@import "../../constants/constant";
+
+.stores-section {
+  padding: 120px 100px 80px 100px;
+
+  .store-title {
+    @include font32(700);
+    color: $orange;
+  }
+
+  .nav-pills {
+    border: 2px solid $orange;
+    border-radius: 25px;
+    margin: 40px 0 50px 0;
+
+    .nav-item {
+      .nav-link {
+        @include btn-style($white, $green, 190px, 40px);
+        transition: $transition;
+        margin: 0;
+
+        &.active {
+          background: $orange;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .stores {
+    .usa-stores,
+    .turkey-stores {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      grid-gap: 30px;
+      grid-row-gap: 30px;
+      margin-bottom: 80px;
+
+      .store-card {
+        background: $cornsilk;
+        box-shadow: 5px 10px 0 $green;
+        height: 200px;
+        padding: 50px;
+        display: flex;
+        border-radius: 10px;
+        flex-flow: column;
+
+        .store-logo {
+          align-self: center;
+          min-height: 30px;
+        }
+
+        .store-name {
+          color: $gray;
+          @include font16(400);
+          margin-top: 40px;
+          align-self: center;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    .page-item {
+      &.active {
+        .page-link {
+          background: $orange;
+          color: $white;
+        }
+      }
+
+      &:first-child,
+      &:last-child {
+        .page-link {
+          background: transparent;
+        }
+      }
+    }
+
+    .page-link {
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      box-shadow: none;
+      margin: 0 2px;
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 30px;
+      color: $gray;
+      transition: $transition;
+
+      &:hover {
+        background: $orange;
+        color: $white;
+      }
+
+      &.prev,
+      &.next {
+        &:hover {
+          background: $orange;
+          color: $white;
+        }
+      }
+    }
+  }
+}

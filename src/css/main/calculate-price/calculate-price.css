@@ -1,0 +1,244 @@
+@font-face {
+  font-family: Prompt-Bold;
+  src: url(../../../fonts/Prompt/Prompt-Bold.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Regular;
+  src: url(../../../fonts/Prompt/Prompt-Regular.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Thin;
+  src: url(../../../fonts/Prompt/Prompt-Thin.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Semibold;
+  src: url(../../../fonts/Prompt/Prompt-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Prompt-LightItalic;
+  src: url(../../../fonts/Prompt/Prompt-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Medium;
+  src: url(../../../fonts/Prompt/Prompt-Medium.ttf);
+}
+
+.calculate-price-section {
+  min-height: 831px;
+  padding: 120px 20px;
+}
+
+.calculate-price-section .img-cover {
+  width: 100%;
+  height: 100%;
+}
+
+.calculate-price-section .img-cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 110%;
+  height: 110%;
+}
+
+.calculate-price-section .calculate-title {
+  font-size: 32px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-family: Prompt-Medium, sans-serif;
+  color: #ffa305;
+  margin-top: 80px;
+  font-family: Prompt-Regular, sans-serif;
+}
+
+.calculate-price-section .dropdown-country {
+  margin-top: 30px;
+}
+
+.calculate-price-section .dropdown-country .ss-main {
+  padding: 0;
+  color: #fff !important;
+  border-radius: 20px;
+  border: none;
+  z-index: 3;
+  width: 210px;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-single-selected {
+  width: 210px;
+  margin: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 20px;
+  height: 40px;
+  border: 2px solid #ffa305;
+  background: #ffa305 url("../../../../assets/svgs/down-caret-white.svg") no-repeat 90% 50%;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-single-selected .ss-arrow {
+  margin: 0 10px;
+  opacity: 0;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-single-selected.ss-open-above ~ .ss-content {
+  padding: 10px 40px 30px 40px;
+  border-radius: 20px 20px 0 0;
+  top: 60px;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-single-selected .ss-disabled {
+  color: white !important;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-single-selected .placeholder {
+  padding: 8px 0 8px 12px;
+  color: white !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-content {
+  background: #fff;
+  top: 20px;
+  border-radius: 0 0 20px 20px;
+  border: 2px solid #ffa305;
+  padding: 20px 20px 10px 20px;
+  z-index: -2;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-content .ss-list {
+  max-height: 400px;
+  text-align: center;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-content .ss-list::-webkit-scrollbar {
+  margin: 0;
+  background: transparent;
+  width: 3px;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-content .ss-list::-webkit-scrollbar-thumb {
+  background: #ffa305;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-content .ss-option {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  color: #ffa305;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-content .ss-option:hover {
+  background: transparent;
+}
+
+.calculate-price-section .dropdown-country .ss-main .ss-content .ss-option.ss-option-selected, .calculate-price-section .dropdown-country .ss-main .ss-content .ss-option.ss-option-disabled {
+  background: white;
+  color: #ffa305;
+}
+
+.calculate-price-section .form-label__weight {
+  position: absolute;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  top: 63px;
+  left: 100px;
+  z-index: 2;
+  color: #58d1b7;
+}
+
+.calculate-price-section .form-label__weight.active-label {
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.calculate-price-section .form-input__weight {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 190px;
+  height: 40px;
+  border: 2px solid #58d1b7;
+  border-radius: 20px;
+  padding: 6px 40px;
+  color: #8a8a8a;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  text-align: center;
+  position: relative;
+  margin-top: 55px;
+}
+
+.calculate-price-section .form-input__weight.active-input {
+  background: #ffa305;
+  color: #fff;
+  border: 2px solid #ffa305;
+}
+
+.calculate-price-section .form-input__weight:-webkit-autofill, .calculate-price-section .form-input__weight:-webkit-autofill:hover, .calculate-price-section .form-input__weight:-webkit-autofill:focus, .calculate-price-section .form-input__weight:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+}
+
+.calculate-price-section .btn-calculate {
+  background: #58d1b7;
+  color: #fff;
+  width: 432px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  border-radius: 20px;
+  padding: 8px;
+  border: 1px solid transparent;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-top: 20px;
+  cursor: auto !important;
+}
+
+.calculate-price-section .btn-calculate:hover:not(#dropdownAdd):not(.dropdown-item):not(.btn-calculate) {
+  color: #58d1b7;
+  border: 1px solid;
+  background: transparent;
+}
+/*# sourceMappingURL=calculate-price.css.map */

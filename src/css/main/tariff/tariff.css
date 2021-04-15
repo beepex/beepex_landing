@@ -1,0 +1,213 @@
+@font-face {
+  font-family: Prompt-Bold;
+  src: url(../../../fonts/Prompt/Prompt-Bold.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Regular;
+  src: url(../../../fonts/Prompt/Prompt-Regular.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Thin;
+  src: url(../../../fonts/Prompt/Prompt-Thin.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Semibold;
+  src: url(../../../fonts/Prompt/Prompt-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Prompt-LightItalic;
+  src: url(../../../fonts/Prompt/Prompt-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Medium;
+  src: url(../../../fonts/Prompt/Prompt-Medium.ttf);
+}
+
+.tariffs-container {
+  margin-top: 120px;
+  margin-bottom: 20px !important;
+}
+
+.tariffs-container #countries-tab {
+  overflow-x: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.tariffs-container .tab-content {
+  margin: 45px 0 20px 0;
+}
+
+.tariffs-container .select-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.tariffs-container.internal {
+  padding: 0 100px;
+}
+
+.tariffs-container.internal #select_1 .ss-single-selected {
+  border: 2px solid #ffa305;
+}
+
+.tariffs-container.internal #select_1 .ss-disabled {
+  color: #fff !important;
+}
+
+.tariffs-container.internal #select_1 .placeholder {
+  color: #ffa305 !important;
+}
+
+.tariffs-container.internal #select_1 .ss-content {
+  background: #ffa305;
+  border: 2px solid #ffa305;
+}
+
+.tariffs-container.internal .ss-main {
+  padding: 0;
+  color: #58d1b7 !important;
+  border-radius: 20px;
+  border: none;
+  z-index: 3;
+  width: 190px;
+  margin-right: 20px;
+}
+
+.tariffs-container.internal .ss-main .ss-single-selected {
+  width: 190px;
+  height: 40px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 20px;
+  border: 2px solid #58d1b7;
+}
+
+.tariffs-container.internal .ss-main .ss-single-selected.ss-open-above ~ .ss-content {
+  padding: 10px 40px 30px 40px;
+  border-radius: 20px 20px 0 0;
+  top: 60px;
+}
+
+.tariffs-container.internal .ss-main .ss-single-selected .ss-disabled {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  color: #8a8a8a !important;
+  padding: 0;
+}
+
+.tariffs-container.internal .ss-main .ss-single-selected .placeholder {
+  padding: 8px 0 8px 0;
+  color: #58d1b7 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tariffs-container.internal .ss-main .ss-content {
+  background: #58d1b7;
+  top: 20px;
+  border-radius: 0 0 20px 20px;
+  border: 2px solid #58d1b7;
+  padding: 30px 20px 10px 20px;
+  z-index: -2;
+}
+
+.tariffs-container.internal .ss-main .ss-content .ss-list {
+  max-height: 400px;
+  text-align: center;
+}
+
+.tariffs-container.internal .ss-main .ss-content .ss-list::-webkit-scrollbar {
+  margin: 0;
+  background: transparent;
+  width: 3px;
+}
+
+.tariffs-container.internal .ss-main .ss-content .ss-list::-webkit-scrollbar-thumb {
+  background: #ffa305;
+}
+
+.tariffs-container.internal .ss-main .ss-content .ss-option {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  color: white;
+}
+
+.tariffs-container.internal .ss-main .ss-content .ss-option:hover {
+  background: transparent;
+}
+
+.tariffs-container.internal .ss-main .ss-content .ss-option.ss-option-selected, .tariffs-container.internal .ss-main .ss-content .ss-option.ss-option-disabled {
+  background: transparent;
+  color: white;
+}
+
+.tariffs-container .shipping-card {
+  background: #f9f6f1;
+  height: 200px;
+  padding: 50px 40px;
+  -webkit-box-shadow: 5px 10px 0 #58d1b7;
+          box-shadow: 5px 10px 0 #58d1b7;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.tariffs-container .shipping-card .shipping-price {
+  color: #58d1b7;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+}
+
+.tariffs-container .shipping-card .divider {
+  height: 1px;
+  background: #ffa305;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.tariffs-container .shipping-card .shipping-weight {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  color: #8a8a8a;
+  margin: 0;
+}
+
+.tariffs-container .shipping-card small {
+  font-size: 11px;
+  color: #8a8a8a;
+}
+/*# sourceMappingURL=tariff.css.map */

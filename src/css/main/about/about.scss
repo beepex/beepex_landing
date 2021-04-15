@@ -1,0 +1,42 @@
+@import '../../constants/constant';
+
+.about-section {
+  padding: 70px 30px 150px 35px;
+
+  .about-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    .about-text {
+      flex: 6;
+      padding: 0 100px 0 0;
+      .about-title {
+        margin-top: 50px;
+        @include font32(700);
+        color: $orange;
+      }
+
+      .about-subtitle {
+        color: $green;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      .about-info {
+        color: $gray;
+        margin-top: 120px;
+        @include font16(400);
+      }
+
+    }
+    .about-img {
+      flex: 3;
+    }
+  }
+}

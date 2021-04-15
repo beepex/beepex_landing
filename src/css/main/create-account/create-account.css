@@ -1,0 +1,459 @@
+@font-face {
+  font-family: Prompt-Bold;
+  src: url(../../../fonts/Prompt/Prompt-Bold.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Regular;
+  src: url(../../../fonts/Prompt/Prompt-Regular.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Thin;
+  src: url(../../../fonts/Prompt/Prompt-Thin.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Semibold;
+  src: url(../../../fonts/Prompt/Prompt-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Prompt-LightItalic;
+  src: url(../../../fonts/Prompt/Prompt-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Medium;
+  src: url(../../../fonts/Prompt/Prompt-Medium.ttf);
+}
+
+.create-account-section {
+  min-height: 300px;
+  padding: 120px 20px 120px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.create-account-section .create-account-form {
+  width: 100%;
+  max-width: 820px;
+}
+
+.create-account-section .create-account-form .create-title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-family: Prompt-Medium, sans-serif;
+  color: #ffa305;
+  margin-bottom: 45px;
+}
+
+.create-account-section .create-account-form .form-label-new {
+  color: #58d1b7;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  margin-left: 40px;
+}
+
+.create-account-section .create-account-form .form-input-new {
+  border: 2px solid #58d1b7;
+  border-radius: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 40px;
+  padding: 0 40px;
+  color: #8a8a8a;
+  -webkit-filter: none !important;
+          filter: none !important;
+}
+
+.create-account-section .create-account-form .form-input-new.__textarea {
+  resize: none;
+  padding: 5px 40px;
+}
+
+.create-account-section .create-account-form .form-input-new:-webkit-autofill, .create-account-section .create-account-form .form-input-new:-webkit-autofill:hover, .create-account-section .create-account-form .form-input-new:-webkit-autofill:focus, .create-account-section .create-account-form .form-input-new:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+}
+
+.create-account-section .create-account-form .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  border: 2px solid #58d1b7;
+  border-radius: 20px;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.create-account-section .create-account-form .language select {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 4px 8px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  background: url("../../../../assets/svgs/down-caret-gray.svg") 100% 50% no-repeat;
+  cursor: pointer;
+  outline: none;
+  width: 55px;
+}
+
+.create-account-section .create-account-form .language .form-input-id {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: #8a8a8a;
+  padding: 6px 12px;
+  -moz-appearance: textfield;
+}
+
+.create-account-section .create-account-form .language .form-input-id::-webkit-inner-spin-button, .create-account-section .create-account-form .language .form-input-id::-webkit-outer-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.create-account-section .create-account-form .language .form-input-id:-webkit-autofill, .create-account-section .create-account-form .language .form-input-id:-webkit-autofill:hover, .create-account-section .create-account-form .language .form-input-id:-webkit-autofill:focus, .create-account-section .create-account-form .language .form-input-id:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+}
+
+.create-account-section .create-account-form .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  border: 2px solid #58d1b7;
+  border-radius: 20px;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.create-account-section .create-account-form .password .form-input-pass {
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 6px 12px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #8a8a8a;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+}
+
+.create-account-section .create-account-form .password .form-input-pass:-webkit-autofill, .create-account-section .create-account-form .password .form-input-pass:-webkit-autofill:hover, .create-account-section .create-account-form .password .form-input-pass:-webkit-autofill:focus, .create-account-section .create-account-form .password .form-input-pass:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+}
+
+.create-account-section .create-account-form .password .btn-eye {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 50px;
+  height: 100%;
+}
+
+.create-account-section .create-account-form .links-cover .btn-save-account {
+  background: #ffa305;
+  color: #fff;
+  width: 400px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  border-radius: 20px;
+  padding: 8px;
+  border: 1px solid transparent;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-top: 40px;
+}
+
+.create-account-section .create-account-form .links-cover .btn-save-account:hover:not(#dropdownAdd):not(.dropdown-item):not(.btn-calculate) {
+  color: #ffa305;
+  background: #fff;
+  border: 1px solid;
+}
+
+.create-account-section .create-account-form .links-cover .login-to-acc {
+  color: #8a8a8a;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.create-account-section .create-account-form .links-cover .login-to-acc a {
+  color: #ffa305;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.settings-form {
+  width: 100%;
+  margin-top: 120px;
+  margin-left: 120px;
+}
+
+.settings-form .form-label-new {
+  color: #58d1b7;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  margin-left: 40px;
+}
+
+.settings-form .form-input-new {
+  border: 2px solid #58d1b7;
+  border-radius: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 40px;
+  padding: 0 40px;
+  color: #8a8a8a;
+  margin-bottom: 20px;
+  -webkit-filter: none !important;
+          filter: none !important;
+}
+
+.settings-form .form-input-new:-webkit-autofill, .settings-form .form-input-new:-webkit-autofill:hover, .settings-form .form-input-new:-webkit-autofill:focus, .settings-form .form-input-new:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+}
+
+.settings-form .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  border: 2px solid #58d1b7;
+  border-radius: 20px;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.settings-form .language select {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 4px 8px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  background: url("../../../../assets/svgs/down-caret-gray.svg") 100% 50% no-repeat;
+  cursor: pointer;
+  outline: none;
+  width: 55px;
+}
+
+.settings-form .language .form-input-id {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: #8a8a8a;
+  padding: 6px 12px;
+  -moz-appearance: textfield;
+}
+
+.settings-form .language .form-input-id::-webkit-inner-spin-button, .settings-form .language .form-input-id::-webkit-outer-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.settings-form .language .form-input-id:-webkit-autofill, .settings-form .language .form-input-id:-webkit-autofill:hover, .settings-form .language .form-input-id:-webkit-autofill:focus, .settings-form .language .form-input-id:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+}
+
+.settings-form .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  border: 2px solid #58d1b7;
+  border-radius: 20px;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.settings-form .password .form-input-pass {
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 6px 12px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #8a8a8a;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+}
+
+.settings-form .password .form-input-pass:-webkit-autofill, .settings-form .password .form-input-pass:-webkit-autofill:hover, .settings-form .password .form-input-pass:-webkit-autofill:focus, .settings-form .password .form-input-pass:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+}
+
+.settings-form .password .btn-eye {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 50px;
+  height: 100%;
+}
+
+.settings-form .btn-save-account {
+  background: #ffa305;
+  color: #fff;
+  width: 400px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  border-radius: 20px;
+  padding: 8px;
+  border: 1px solid transparent;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-top: 60px;
+}
+
+.settings-form .btn-save-account:hover:not(#dropdownAdd):not(.dropdown-item):not(.btn-calculate) {
+  color: #ffa305;
+  background: #fff;
+  border: 1px solid;
+}
+/*# sourceMappingURL=create-account.css.map */

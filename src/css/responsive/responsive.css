@@ -1,0 +1,1394 @@
+/*********************************** Navbar Start **************************************/
+@media (max-width: 1150px) {
+  .main-nav .cargo-info {
+    padding: 10px 2vw 10px 2vw;
+    font-size: 13px;
+  }
+  .main-nav .cargo-info .link-login {
+    margin-right: 1vw;
+  }
+  .main-nav .nav-bottom {
+    padding: 15px 2vw 23px 0;
+  }
+  .main-nav .nav-bottom .navbar-nav {
+    margin-right: 3vw;
+  }
+  .main-nav .nav-bottom .nav-link {
+    font-size: 14px;
+  }
+  .main-nav .nav-bottom .dropdown-add .btn {
+    background: url("../../../assets/svgs/down-caret.svg") 85% 50% no-repeat;
+    width: 20vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1108px) {
+  .dropdown-add .dropdown-menu.show {
+    min-width: 150px !important;
+  }
+  .dropdown-add .dropdown-menu.show .dropdown-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    position: relative;
+  }
+  .main-nav .cargo-info {
+    border-radius: 0 0 0 50px;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .main-nav .cargo-info .langLogin {
+    min-width: 100% !important;
+  }
+  .main-nav .cargo-info-text {
+    white-space: normal;
+    display: none;
+    margin-top: -10px;
+  }
+  .main-nav .cargo-info-text.active {
+    display: block;
+  }
+  .main-nav .cargo-info-text .link-phone {
+    white-space: nowrap;
+  }
+  .main-nav .dropdown-add {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  .main-nav .dropdown-add .dropdown-menu.show .dropdown-item {
+    width: 100%;
+  }
+  .navbar-brand {
+    position: absolute;
+    top: 35px;
+    left: 0;
+  }
+  .navbar-brand a {
+    top: 25px !important;
+    left: 20px !important;
+  }
+  .navbar-brand a img {
+    width: 63px !important;
+    height: 60px !important;
+  }
+  .sm-hidden {
+    display: none !important;
+  }
+  .sm-visible {
+    display: block !important;
+  }
+  .sm-visible-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .main-nav {
+    padding-bottom: 20px;
+  }
+  .main-nav .navbar-brand {
+    top: 42px;
+  }
+  .main-nav .btn-menu {
+    margin-top: 10px !important;
+  }
+  .main-nav .dropdown-add {
+    top: 22px !important;
+  }
+  .main-nav .dropdown-add .btn {
+    width: 113px !important;
+    font-size: 14px;
+    line-height: 21px;
+    background: url("../../../assets/svgs/down-caret.svg") 90% 50% no-repeat !important;
+  }
+  .main-nav .dropdown-add .dropdown-item {
+    width: 100% !important;
+  }
+  .main-nav .responsive-menu {
+    margin-left: -10px;
+  }
+  .tariffs-container #select_1 {
+    margin-right: 8px !important;
+  }
+  .tariffs-container.internal .ss-main {
+    width: 150px !important;
+    margin-right: 0 !important;
+  }
+  .tariffs-container.internal .ss-main .ss-single-selected {
+    width: 100% !important;
+  }
+  .tariffs-container.internal .ss-main .ss-single-selected .ss-arrow {
+    margin-left: 0 !important;
+    margin-right: 10px !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .dropdown-add {
+    margin-top: 5px;
+  }
+  .navbar-brand {
+    top: 48px !important;
+  }
+}
+
+@media (max-width: 378px) {
+  .main-nav .cargo-info {
+    font-size: 12px;
+  }
+}
+
+/*********************************** Navbar End **************************************/
+/*********************************** Calculate Price Section Start **************************************/
+@media (max-width: 1000px) {
+  .calculate-price-section {
+    padding: 120px 6.5vw;
+  }
+  .calculate-price-section .img-cover img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .calculate-price-section .ss-main {
+    margin-right: -10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .calculate-price-section {
+    padding: 50px 20px 80px;
+    min-height: 550px;
+  }
+  .calculate-price-section .calculate-title {
+    font-size: 25px;
+    line-height: 38px;
+    margin-top: 0;
+  }
+  .calculate-price-section .btn-calculate {
+    margin-left: 20px;
+  }
+  .shipping-title {
+    font-size: 25px !important;
+    line-height: 38px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculate-price-section .dropdown-country {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .calculate-price-section .dropdown-country .ss-main,
+  .calculate-price-section .dropdown-country .ss-single-selected {
+    max-width: 150px !important;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .calculate-price-section .form-input__weight {
+    width: 150px !important;
+    margin-left: -20px;
+  }
+  .calculate-price-section .form-label__weight {
+    left: 64px;
+    top: 64px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .calculate-price-section .btn-calculate {
+    width: 320px;
+    display: block;
+  }
+}
+
+/*********************************** Calculate Price Section End **************************************/
+/*********************************** Shipping Price Start **************************************/
+@media (max-width: 768px) {
+  .shipping-price-section.internal,
+  .shipping-price-section .tab-content {
+    padding: 0 20px !important;
+  }
+}
+
+@media (max-width: 442px) {
+  .main-nav .navbar-brand a {
+    top: 30px !important;
+  }
+  .main-nav .navbar-brand img {
+    width: 63px !important;
+    height: 60px !important;
+  }
+  .shipping-price-section .nav-item .nav-link,
+  .dashboard-section .nav-item .nav-link {
+    width: 150px !important;
+  }
+  .shipping-price-section .isLiquid,
+  .dashboard-section .isLiquid {
+    width: 300px;
+  }
+}
+
+@media (max-width: 364px) {
+  .shipping-price-section .nav-item .nav-link,
+  .dashboard-section .nav-item .nav-link {
+    width: 120px !important;
+  }
+  .shipping-price-section .isLiquid,
+  .dashboard-section .isLiquid {
+    width: 230px;
+  }
+}
+
+/*********************************** Shipping Price End **************************************/
+/*********************************** Work Principles Start **************************************/
+@media (max-width: 768px) {
+  .work-principle-section {
+    padding: 20px;
+  }
+  .work-principle-section .principle-title {
+    white-space: nowrap;
+    font-size: 25px;
+    line-height: 38px;
+  }
+}
+
+/*********************************** Work Principles End **************************************/
+/*********************************** Carousel Start **************************************/
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    min-height: 214px;
+    margin: 60px 0;
+  }
+}
+
+/*********************************** Carousel End **************************************/
+/*********************************** News Start **************************************/
+@media screen and (max-width: 1300px) {
+  .news-section .news-cards {
+    -webkit-column-count: 2 !important;
+            column-count: 2 !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .news-section .news-cards {
+    -webkit-column-count: 1 !important;
+            column-count: 1 !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .news-section .news-card {
+    margin-bottom: 40px;
+  }
+  .news-section .news-card .news-card-title {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-section.news-page {
+    padding: 0 20px 30px;
+  }
+  .news-section .news-title {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .news-section.news-page .news-card {
+    padding: 50px 30px;
+  }
+  .news-section.news-page .news-title {
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+  }
+  .news-section.news-page .news-card-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/*********************************** News End **************************************/
+/*********************************** Footer Start **************************************/
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 45px 20px 0;
+    font-size: 14px;
+  }
+  .main-footer .footer-logo {
+    margin: 30px 35px 0 0;
+  }
+  .main-footer .footer-logo img {
+    width: 106px;
+    height: 30px;
+  }
+  .main-footer .footer-links {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-transform: translateX(-230px);
+            transform: translateX(-230px);
+    margin-top: 80px;
+    width: 500px;
+  }
+  .main-footer .footer-info-wrapper {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 3 100% !important;
+            flex: 1 3 100% !important;
+    justify-self: flex-start;
+  }
+  .main-footer .footer-info-wrapper .footer-info {
+    width: 58vw;
+    font-size: 14px;
+  }
+  .main-footer .footer-bottom {
+    border-radius: 50px 0 0 0;
+    padding: 18px 36px;
+  }
+  .main-footer .footer-bottom .social-media {
+    width: 150px;
+  }
+  .main-footer .footer-bottom .social-media .social-link {
+    font-size: 18px;
+  }
+  .main-footer .footer-bottom .copyright {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 5px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 442px) {
+  .main-footer .footer-info {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-footer .footer-info-link.__phone {
+    margin-left: -20px !important;
+  }
+  .main-footer .footer-links {
+    width: 400px !important;
+  }
+  .main-footer .footer-links:first-child {
+    margin-left: 30px;
+  }
+  .main-footer .footer-info {
+    width: 45vw !important;
+  }
+}
+
+/*********************************** Footer End **************************************/
+/*********************************** Login Start **************************************/
+@media (max-width: 1000px) {
+  .login-section .register-title {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-section {
+    padding: 50px 20px 80px 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .login-section .form-group .form-input {
+    width: 320px;
+  }
+  .login-section .btn-login,
+  .login-section .btn-register {
+    width: 320px !important;
+  }
+  .login-section .forgot-link {
+    margin-left: 30px;
+  }
+  .login-section .login-title,
+  .login-section .register-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+/*********************************** Login End **************************************/
+/*********************************** Password Recovery Start **************************************/
+@media (max-width: 460px) {
+  .pass-recover {
+    min-height: 30px;
+    padding: 50px 20px 80px 20px;
+  }
+  .pass-recover .recover-title {
+    font-size: 25px !important;
+    line-height: 38px !important;
+  }
+  .pass-recover .pass-recover-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .pass-recover .pass-recover-form .form-input,
+  .pass-recover .pass-recover-form .btn-send-link {
+    width: 320px !important;
+  }
+}
+
+/*********************************** Password Recovery End **************************************/
+/*********************************** Create Account Start **************************************/
+@media (max-width: 460px) {
+  .create-account-section {
+    padding: 50px 20px 80px 20px;
+  }
+  .create-account-section .create-title {
+    font-size: 25px !important;
+    line-height: 38px !important;
+  }
+  .create-account-section .btn-save-account {
+    width: 90vw !important;
+  }
+  .create-account-section .__textarea {
+    height: 70px !important;
+  }
+}
+
+/*********************************** Create Account End **************************************
+/
+/*********************************** About Start **************************************/
+@media (max-width: 768px) {
+  .about-section .about-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 50px 20px 80px 20px;
+  }
+  .about-section .about-wrapper .about-title {
+    font-size: 25px !important;
+    line-height: 38px !important;
+  }
+  .about-section .about-wrapper .about-subtitle {
+    display: none;
+  }
+  .about-section .about-wrapper .about-info {
+    margin-top: 30px !important;
+  }
+  .about-section .about-wrapper .about-text {
+    padding-right: 0;
+  }
+  .about-section .about-img {
+    height: 210px !important;
+    width: 140px !important;
+    margin: 0 auto;
+  }
+  .about-section .about-img img {
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*********************************** About End **************************************/
+/*********************************** Shops Start **************************************/
+@media (max-width: 1120px) {
+  .stores-section {
+    padding: 50px 20px 80px 20px;
+  }
+  .stores .usa-stores,
+  .stores .turkey-stores {
+    -ms-grid-columns: (minmax(230px, 1fr))[auto-fit] !important;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)) !important;
+  }
+}
+
+@media (max-width: 496px) {
+  .stores-section .store-title {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .stores-section .nav-item .nav-link {
+    width: 150px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .stores-section .nav-item .nav-link {
+    width: 30vw !important;
+  }
+  .stores-section .page-item:first-child, .stores-section .page-item:last-child {
+    padding: 13px 0;
+  }
+  .stores-section .page-item:first-child .page-link, .stores-section .page-item:last-child .page-link {
+    background: transparent;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/*********************************** Shops End **************************************/
+/*********************************** Dashboard Start **************************************/
+@media (max-width: 1000px) {
+  .dashboard-section .dashboard-tab {
+    width: 100% !important;
+  }
+  .dashboard-section .dashboard-tab ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .dashboard-section .right-side .balance-card {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-section {
+    padding: 50px 40px 80px 20px;
+  }
+  .dashboard-section .ss-single-selected {
+    padding: 5px 10px !important;
+  }
+  .dashboard-section .ss-multi-selected {
+    padding: 5px 20px !important;
+  }
+  .dashboard-section .ss-content {
+    padding: 30px 10px 10px 10px !important;
+  }
+  .dashboard-section .form-label {
+    -webkit-transform: translate(10px, 38px);
+            transform: translate(10px, 38px);
+  }
+  .dashboard-section .form-label.active {
+    -webkit-transform: translate(10px, 18px);
+            transform: translate(10px, 18px);
+  }
+  .dashboard-section .dashboard-tab {
+    width: 100% !important;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .dashboard-section .dashboard-tab ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .dashboard-section .dashboard-tab ul .user-id {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .dashboard-section .right-side .filter_field {
+    margin-top: 55px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-section {
+    padding: 50px 22px 80px 20px;
+  }
+  .dashboard-section .right-side .country-card:first-child {
+    margin-left: -22px;
+  }
+  .dashboard-section .right-side .balance-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 40px 50px !important;
+    height: 108px !important;
+    margin-right: 30px !important;
+  }
+  .dashboard-section .right-side .balance-card .balance-title {
+    font-size: 20px !important;
+    line-height: 30px !important;
+    margin-top: 10px;
+  }
+  .dashboard-section .right-side .balance-card .balance-info {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-top: 5px;
+  }
+  .dashboard-section .right-side .balance-card .divider {
+    -webkit-transform: rotate(90deg) !important;
+            transform: rotate(90deg) !important;
+    width: 48px !important;
+    height: 1px;
+  }
+  .dashboard-section .right-side .btn-order,
+  .dashboard-section .right-side .btn-add-order,
+  .dashboard-section .right-side .btn-declare {
+    min-width: 150px !important;
+  }
+  .dashboard-section .right-side .filter_field {
+    margin-right: 30px;
+  }
+  .dashboard-section .right-side .filter_field .ss-content {
+    width: 160px !important;
+  }
+  .dashboard-section .right-side .filter_field .ss-single-selected {
+    max-width: 160px !important;
+  }
+  .dashboard-section .right-side .filter_field .ss-single-selected .ss-arrow {
+    margin-left: 0 !important;
+    margin-right: 5px !important;
+  }
+  .dashboard-section .right-side .btn-add-order {
+    margin-left: -10px !important;
+  }
+}
+
+@media (max-width: 492px) {
+  .dashboard-section .right-side .declaration-form .form-input,
+  .dashboard-section .right-side .declaration-form .document-field,
+  .dashboard-section .right-side .declaration-form .ss-main,
+  .dashboard-section .right-side .order-form .form-input,
+  .dashboard-section .right-side .order-form .document-field,
+  .dashboard-section .right-side .order-form .ss-main {
+    min-width: 90vw !important;
+    margin-left: -10px !important;
+  }
+  .dashboard-section .right-side .trash_img {
+    margin-right: 20px;
+  }
+  .dashboard-section .right-side .form-group {
+    margin-left: -15px;
+  }
+  .dashboard-section .right-side .form-group .ss-single-selected {
+    padding: 5px 30px !important;
+  }
+  .dashboard-section .right-side .form-group .ss-multi-selected {
+    padding: 5px 40px !important;
+  }
+  .dashboard-section .right-side .balance-card {
+    padding: 40px 20px !important;
+  }
+  .dashboard-section .right-side .btn-add-link {
+    margin-left: -20px;
+  }
+  .dashboard-section .right-side .btn-add-link,
+  .dashboard-section .right-side .btn-send-order,
+  .dashboard-section .right-side .btn-send-declaration {
+    min-width: 150px !important;
+  }
+  .dashboard-section .right-side .total-price {
+    margin-left: -20px !important;
+  }
+  .dashboard-section .right-side .btn-add-link {
+    margin-left: -40px !important;
+  }
+  .dashboard-section .right-side .btn-send-declaration {
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 492px) {
+  .dashboard-section .right-side .isLiquid {
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .dashboard-section .right-side .balance-card {
+    padding: 40px 10px !important;
+  }
+}
+
+/**************************************** Dashboard End *******************************************/
+/*********************************** Conditions Start *******************************/
+@media (max-width: 575px) {
+  .conditions-section .condition-subtitle {
+    margin-bottom: 0;
+  }
+  .conditions-section .condition-title {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .conditions-section {
+    padding: 50px 10px 80px 10px;
+  }
+  .conditions-section .info_top {
+    margin-bottom: 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .conditions-section .condition-img {
+    margin: 30px 0 30px 0;
+  }
+  .conditions-section .condition-img img {
+    width: 200px;
+    height: 200px;
+  }
+  .conditions-section .condition-img-2 {
+    margin: 20px 0 35px 0;
+  }
+  .conditions-section .condition-img-2 img {
+    width: 256px;
+    height: 150px;
+  }
+  .conditions-section .info_top .col-lg-7 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  .conditions-section .info_top .col-lg-5 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+  .conditions-section .condition-info {
+    margin-top: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .conditions-section .condition-subtitle {
+    margin-bottom: 0;
+  }
+  .conditions-section {
+    padding: 50px 40px 50px 40px;
+  }
+  .conditions-section .info_top {
+    margin-bottom: 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .conditions-section .info_top .col-lg-7 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  .conditions-section .info_top .col-lg-5 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+  .conditions-section .condition-info {
+    margin-top: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .conditions-section .condition-subtitle {
+    margin-bottom: 50px;
+  }
+  .conditions-section {
+    padding: 50px 60px 50px 60px;
+  }
+}
+
+/*********************************** Conditions End ******************************/
+/*********************************** Payment Start *******************************/
+@media (min-width: 575px) and (max-width: 767px) {
+  .payment-section {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .payment-section .payment-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* .payment-form .col-lg-6 .form-group .row .col-lg-12 .d-flex.align-items-center{
+    flex-direction: column;
+  } */
+}
+
+/*@media (min-width: 768px) and (max-width: 991px) {
+  .payment-section .payment-container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  .payment-section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-section {
+    padding: 20px 20px 80px 20px;
+  }
+  .payment-section .payment-wrapper .col-lg-6:last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .payment-section .payment-wrapper .col-lg-6:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .payment-section .payment-wrapper .flip_card {
+    margin-bottom: 60px;
+  }
+}
+
+/*********************************** Payment End *********************************/
+/*********************************** Settings Start *********************************/
+@media (max-width: 575px) {
+  /*.dashboard-section {
+    padding: 80px 50px;
+  }
+  .dashboard-section .container-fluid .right-side {
+    padding-left: 0;
+  }*/
+  .settings-form {
+    margin-top: 50px;
+    margin-left: -10px;
+  }
+  .settings-form .col-lg-12.d-flex {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .settings-form .btn-save-account {
+    width: 100%;
+    height: 40px;
+  }
+  .settings-form .form-input-new,
+  .settings-form .password,
+  .settings-form .language {
+    height: 40px;
+    padding: 20px 40px;
+  }
+  .settings-form .password .btn-eye img {
+    margin-top: -25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* .dashboard-section {
+     padding: 80px 60px;
+   }
+   .dashboard-section .container-fluid .right-side {
+     padding-left: 0;
+   }*/
+  .settings-form {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .settings-form .col-lg-12.d-flex {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .settings-form .btn-save-account {
+    width: 100%;
+    height: 40px;
+  }
+  .settings-form .form-input-new,
+  .settings-form .password,
+  .settings-form .language {
+    height: 40px;
+    padding: 20px 40px;
+  }
+  .settings-form .password .btn-eye img {
+    margin-top: -25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .dashboard-section .container-fluid .right-side {
+    padding-left: 0;
+  }
+  .settings-form {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .settings-form .col-lg-12.d-flex {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .settings-form .btn-save-account {
+    width: 100%;
+    height: 40px;
+    padding: 20px 40px 35px;
+  }
+  .settings-form .form-input-new,
+  .settings-form .password,
+  .settings-form .language {
+    height: 40px;
+    padding: 20px 40px;
+  }
+  .settings-form .password .btn-eye img {
+    margin-top: -25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dashboard-section {
+    height: 1200px;
+    padding: 80px 80px;
+  }
+  .settings-form {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .dashboard-section .container-fluid .right-side {
+    padding-left: 0;
+  }
+  .dashboard-section .container-fluid .right-side .row form {
+    -webkit-transform: translate(-15%, 50%);
+            transform: translate(-15%, 50%);
+  }
+}
+
+/*********************************** Settings End *********************************/
+/*********************************** Balance Start *********************************/
+@media (max-width: 530px) {
+  .dashboard-section .right-side .balance-form {
+    margin: 60px 0 60px -20px !important;
+  }
+  .dashboard-section .right-side .balance-form .btn-increase {
+    width: 103% !important;
+    margin-left: -12px;
+  }
+  .dashboard-section .right-side .balance-form-select {
+    /*
+          .ss-content {
+            width: 100% !important;
+          }
+          */
+  }
+  .dashboard-section .right-side .balance-form-select .ss-main,
+  .dashboard-section .right-side .balance-form-select input[type="text"] {
+    width: 50% !important;
+  }
+  .dashboard-section .right-side .balance-form-select .ss-single-selected {
+    width: 40vw !important;
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .dashboard-section .container-fluid .right-side .form-group {
+    margin-top: 20px;
+  }
+  .dashboard-section .container-fluid .right-side .balance-form {
+    padding-left: 25px;
+  }
+}
+
+@media (min-width: 611px) and (max-width: 700px) {
+  .dashboard-section .container-fluid .right-side .balance-form .col-lg-7 {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 767px) {
+  .dashboard-section .container-fluid .right-side .balance-form .col-lg-7 {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .dashboard-section .container-fluid .right-side .balance-form .col-lg-7 {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 991px) {
+  .dashboard-section .container-fluid .right-side .balance-form .col-lg-7 {
+    padding-left: 23%;
+    padding-right: 23%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dashboard-section .container-fluid .right-side .balance-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translate(25%);
+            transform: translate(25%);
+  }
+}
+
+/*********************************** Balance End *********************************/
+/*********************************** Foreign-Address Start *********************************/
+@media (max-width: 680px) {
+  .dashboard-section .container-fluid .right-side .foreign-address-info {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dashboard-section .container-fluid .right-side .foreign-address-info {
+    padding-left: 10%;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-section .right-side .foreign-address-info {
+    margin-left: -20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-section .right-side .filter_field.on_foreign {
+    margin-left: 20px !important;
+    width: 240px !important;
+  }
+  .dashboard-section .right-side .filter_field.on_foreign .ss-main,
+  .dashboard-section .right-side .filter_field.on_foreign .ss-single-selected {
+    min-width: 240px !important;
+  }
+  .dashboard-section .right-side .filter_field.on_foreign .ss-content {
+    min-width: 240px !important;
+  }
+}
+
+/*********************************** Foreign-Address End *********************************/
+/*********************************** Courier Start *********************************/
+@media (min-width: 575px) and (max-width: 991px) {
+  .dashboard-section .container-fluid .right-side .declaration-form {
+    width: 100%;
+  }
+  .dashboard-section .container-fluid .right-side .declaration-form .form-group {
+    margin-top: 0;
+  }
+  .dashboard-section .container-fluid .right-side .declaration-form .isLiquid {
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .dashboard-section .container-fluid .right-side .declaration-form .btn-send-declaration {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .table-responsive-xl {
+    margin-left: 10%;
+  }
+  .dashboard-section .container-fluid .right-side .declaration-form {
+    margin-top: 30%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .table-responsive-xl {
+    margin-left: 13%;
+  }
+  .dashboard-section .container-fluid .right-side .declaration-form {
+    -webkit-transform: translate(5%);
+            transform: translate(5%);
+  }
+}
+
+/*********************************** Courier End *********************************/
+/*********************************** Order Table Start *********************************/
+@media (max-width: 1000px) {
+  .dashboard-section .right-side .paid-order-table {
+    margin-left: -10px;
+    padding: 30px 20px !important;
+  }
+  .dashboard-section .right-side .paid-order-table .paid-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 724px) {
+  .dashboard-section .right-side .paid-order-table {
+    -ms-grid-columns: (minmax(230px, 1fr))[auto-fit] !important;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)) !important;
+    /*p {
+          display: flex;
+          flex-flow: column;
+          align-items: flex-start;
+        }*/
+  }
+}
+
+@media (max-width: 700px) {
+  .dashboard-section .right-side .paid-order-table {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit] !important;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  }
+  .dashboard-section .right-side .paid-order-table p:not(:last-child) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*align-items: center;
+          justify-content: center;*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dashboard-section .right-side .paid-order-table p:not(:last-child) span {
+    margin-left: 0 !important;
+    margin-top: 7px !important;
+  }
+  .dashboard-section .right-side .paid-order-table p:nth-child(9) {
+    margin-bottom: 50px !important;
+  }
+  .dashboard-section .right-side .paid-order-table p:last-child {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    width: 100% !important;
+    padding: 20px 20px 20px 10px;
+  }
+}
+
+@media (max-width: 492px) {
+  .dashboard-section .right-side .paid-order-table {
+    -ms-grid-columns: (minmax(130px, 1fr))[auto-fit] !important;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)) !important;
+    width: 88vw !important;
+  }
+}
+
+/*********************************** Not Paid Table Start *********************************/
+@media (max-width: 820px) {
+  .dashboard-section .right-side .order-link a {
+    max-width: 180px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .dashboard-section .right-side .order-link {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .dashboard-section .right-side .order-link a {
+    margin-left: 0 !important;
+    margin-top: 7px !important;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 470px) {
+  .dashboard-section .right-side .order-link a {
+    max-width: 130px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .dashboard-section .right-side .order-link a {
+    max-width: 100% !important;
+  }
+}
+
+/*********************************** Not Paid Table End *********************************/
+/*********************************** Order Table End *********************************/
+/*********************************** Payment Success Start *********************************/
+@media (max-width: 576px) {
+  .payment-section .payment-container .payment-success .success-wrapper-title {
+    font-size: 20px !important;
+    line-height: 30px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .payment-section .payment-container .payment-success .success-wrapper-info {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/*********************************** Payment Success End *********************************/
+/*********************************** Courier Orders Start *********************************/
+@media (max-width: 576px) {
+  .dashboard-section .right-side .filter_field.on_courier {
+    min-width: 80% !important;
+  }
+  .dashboard-section .right-side .filter_field .ss-main,
+  .dashboard-section .right-side .filter_field .ss-single-selected,
+  .dashboard-section .right-side .filter_field .ss-content {
+    margin-left: 22px !important;
+    min-width: 82% !important;
+  }
+}
+
+/*********************************** Courier Orders End *********************************/
+/*********************************** Packages Start *********************************/
+@media (max-width: 576px) {
+  .dashboard-section .right-side .filter_field.on_packages {
+    min-width: 70% !important;
+    margin-left: -70px !important;
+  }
+  .dashboard-section .right-side .filter_field.on_packages .ss-main {
+    margin-left: 70px !important;
+  }
+  .dashboard-section .right-side .filter_field.on_packages .ss-main .ss-single-selected {
+    padding: 0 18px 0 5px !important;
+  }
+  .dashboard-section .right-side .filter_field.on_packages .ss-main .ss-single-selected .placeholder {
+    padding: 0 0 0 15px !important;
+  }
+}
+
+/*********************************** Packages End *********************************/
+/*********************************** Contact Start *********************************/
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 50px 20px 80px 20px !important;
+  }
+  .contact-section .contact-title {
+    margin-top: 30px;
+  }
+}
+
+/*********************************** Contact End *********************************/
+/*********************************** Order Conditions Start *********************************/
+@media screen and (max-width: 1000px) {
+  .order-conditions {
+    padding: 120px 70px;
+  }
+  .order-conditions .conditions .info {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-conditions {
+    padding: 50px 20px;
+  }
+  .order-conditions .conditions .info {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .order-conditions {
+    padding: 50px 20px;
+  }
+  .order-conditions .title {
+    font-size: 28px;
+    line-height: normal;
+  }
+  .order-conditions .conditions .subtitle {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .order-conditions .conditions .info {
+    margin-left: 20px;
+  }
+}
+
+/*********************************** Order Conditions End *********************************/
+/*********************************** News detail Start *********************************/
+@media screen and (max-width: 1000px) {
+  .news-detail-section {
+    padding: 120px 70px;
+  }
+  .news-detail-section .news-detail .info {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news-detail-section {
+    padding: 50px 20px;
+  }
+  .news-detail-section .news-detail .info {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .news-detail-section {
+    padding: 50px 20px;
+  }
+  .news-detail-section .title {
+    font-size: 26px;
+    line-height: normal;
+  }
+  .news-detail-section .news-detail .release-date {
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  .news-detail-section .news-detail .info {
+    margin-left: 20px;
+  }
+}
+
+/*********************************** News detail End *********************************/
+/*# sourceMappingURL=responsive.css.map */

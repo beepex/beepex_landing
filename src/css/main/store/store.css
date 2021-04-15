@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Prompt-Bold;
+  src: url(../../../fonts/Prompt/Prompt-Bold.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Regular;
+  src: url(../../../fonts/Prompt/Prompt-Regular.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Thin;
+  src: url(../../../fonts/Prompt/Prompt-Thin.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Semibold;
+  src: url(../../../fonts/Prompt/Prompt-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Prompt-LightItalic;
+  src: url(../../../fonts/Prompt/Prompt-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Medium;
+  src: url(../../../fonts/Prompt/Prompt-Medium.ttf);
+}
+
+.stores-section {
+  padding: 120px 100px 80px 100px;
+}
+
+.stores-section .store-title {
+  font-size: 32px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-family: Prompt-Medium, sans-serif;
+  color: #ffa305;
+}
+
+.stores-section .nav-pills {
+  border: 2px solid #ffa305;
+  border-radius: 25px;
+  margin: 40px 0 50px 0;
+}
+
+.stores-section .nav-pills .nav-item .nav-link {
+  background: #fff;
+  color: #58d1b7;
+  width: 190px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  border-radius: 20px;
+  padding: 8px;
+  border: 1px solid transparent;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin: 0;
+}
+
+.stores-section .nav-pills .nav-item .nav-link.active {
+  background: #ffa305;
+  color: #fff;
+}
+
+.stores-section .stores .usa-stores,
+.stores-section .stores .turkey-stores {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(290px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 80px;
+}
+
+.stores-section .stores .usa-stores .store-card,
+.stores-section .stores .turkey-stores .store-card {
+  background: #f9f6f1;
+  -webkit-box-shadow: 5px 10px 0 #58d1b7;
+          box-shadow: 5px 10px 0 #58d1b7;
+  height: 200px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.stores-section .stores .usa-stores .store-card .store-logo,
+.stores-section .stores .turkey-stores .store-card .store-logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  min-height: 30px;
+}
+
+.stores-section .stores .usa-stores .store-card .store-name,
+.stores-section .stores .turkey-stores .store-card .store-name {
+  color: #8a8a8a;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Prompt-Regular, sans-serif;
+  margin-top: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.stores-section .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stores-section .pagination .page-item.active .page-link {
+  background: #ffa305;
+  color: #fff;
+}
+
+.stores-section .pagination .page-item:first-child .page-link, .stores-section .pagination .page-item:last-child .page-link {
+  background: transparent;
+}
+
+.stores-section .pagination .page-link {
+  border: none;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 54px;
+  height: 54px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0 2px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 30px;
+  color: #8a8a8a;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.stores-section .pagination .page-link:hover {
+  background: #ffa305;
+  color: #fff;
+}
+
+.stores-section .pagination .page-link.prev:hover, .stores-section .pagination .page-link.next:hover {
+  background: #ffa305;
+  color: #fff;
+}
+/*# sourceMappingURL=store.css.map */

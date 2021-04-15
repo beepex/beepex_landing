@@ -1,0 +1,229 @@
+@import '../../constants/constant';
+
+.payment-section {
+  .payment-container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 110px 0;
+
+    .payment-form {
+      label {
+        color: $green;
+        padding-left: 30px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      input.form-control {
+        border: 2px solid $green;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        padding: 8px 40px;
+        box-shadow: none;
+        color: $gray;
+
+        &[type='number'] {
+          -moz-appearance: textfield;
+
+          &:not(#cart_number) {
+            text-align: center;
+          }
+
+          &::-webkit-inner-spin-button,
+          &::-webkit-outer-spin-button {
+            display: none;
+            margin: 0;
+          }
+        }
+
+      }
+    }
+
+    .flip_card {
+      width: 320px;
+      height: 220px;
+
+      &-cards {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &-front {
+          background: $cornsilk;
+          padding: 25px 25px;
+          border-radius: 10px;
+          color: #536E86;
+          width: 275px;
+          height: 173px;
+          position: absolute;
+          z-index: 3;
+          animation: bounce-x-2 .3s linear forwards;
+
+          &.input_focused {
+            z-index: 1;
+            animation: bounce-x .3s linear forwards;
+          }
+
+          img {
+            margin-bottom: 16px;
+          }
+
+          &-number {
+            padding-bottom: 8px;
+          }
+        }
+
+        &-back {
+          background: $green;
+          padding: 28px 0;
+          width: 275px;
+          height: 173px;
+          border-radius: 10px;
+          top: 30px;
+          left: 30px;
+          z-index: 2;
+          animation: bounce-x-out-2 .3s linear forwards;
+          position: absolute;
+
+          &-bar {
+            width: 100%;
+            height: 45px;
+            background: $cornsilk;
+          }
+
+          &-cvv {
+            margin: 13px 10px;
+            background: $cornsilk;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #536E86;
+            padding: 7px 21px;
+            text-align: right;
+            height: 33px;
+          }
+        }
+      }
+    }
+
+    .flip_card-cards:hover .flip_card-cards-front {
+      z-index: 1;
+      animation: bounce-x .3s linear forwards;
+    }
+
+    .flip_card-cards:hover .flip_card-cards-back {
+      z-index: 2;
+      animation: bounce-x-out .3s linear forwards;
+    }
+
+    @keyframes bounce-x {
+      from {
+        transform: rotateY(360deg);
+      }
+      to {
+        transform: rotateY(0deg);
+      }
+    }
+
+    @keyframes bounce-x-out {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(-360deg);
+      }
+    }
+    @keyframes bounce-x-2 {
+      from {
+        transform: rotateY(360deg);
+      }
+      to {
+        transform: rotateY(0deg);
+      }
+    }
+
+    @keyframes bounce-x-out-2 {
+      from {
+        transform: rotateY(0);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+
+    .btn-payment {
+      @include btn-style($green, white, 100%, 40px);
+      margin-top: 40px;
+      display: block;
+      text-decoration: none;
+    }
+
+    /****************************** Payment Success ******************************/
+
+    .payment-success {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 450px;
+
+      .loader {
+        max-width: 610px;
+        width: 80%;
+        height: 5px;
+        border-radius: 40px;
+        overflow: hidden;
+        background: $cornsilk;
+        position: relative;
+
+        &-inner {
+          height: 100%;
+          width: 138px;
+          background: $green;
+          border-radius: 40px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          animation: loading 1s linear infinite;
+
+          @keyframes loading {
+            from {
+              left: 0;
+            }
+            to {
+              left: 100%;
+            }
+          }
+        }
+      }
+
+      .success-wrapper {
+        display: none;
+
+        &-title {
+          color: $orange;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 38px;
+          text-align: center;
+          margin: 30px 0;
+        }
+
+        &-info {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: $gray;
+        }
+      }
+    }
+
+    /****************************** Payment Success ******************************/
+  }
+}

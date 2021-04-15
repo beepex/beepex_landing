@@ -1,0 +1,67 @@
+@import "../../constants/constant";
+
+.conditions-section {
+  padding: 120px 140px 100px 140px;
+
+  .condition-title {
+    color: $orange;
+    @include font32(700);
+  }
+
+  .info_top {
+    margin-bottom: 120px;
+  }
+
+  .condition-subtitle {
+    color: $green;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 100px;
+  }
+
+  .condition-info {
+    color: $gray;
+    @include font16(400);
+  }
+
+  .condition-img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+}
+
+.order-conditions {
+  padding: 120px 100px;
+
+  .title {
+    color: $orange;
+    @include font32(700);
+    font-family: Prompt-Bold, sans-serif;
+  }
+
+  .conditions {
+    margin-bottom: 50px;
+    .subtitle {
+      color: $green;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 30px;
+    }
+
+    .info {
+      margin-left: 105px;
+      margin-right: 100px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: $gray;
+      text-align: justify;
+    }
+  }
+}

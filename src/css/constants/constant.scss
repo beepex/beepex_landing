@@ -1,0 +1,146 @@
+$green: #58d1b7;
+$greenish: #01c02b;
+$white: #fff;
+$gray: #8a8a8a;
+$cornsilk: #f9f6f1;
+$orange: #ffa305;
+$red: #ff0000;
+$transition: all 0.2s ease;
+
+@font-face {
+  font-family: Prompt-Bold;
+  src: url(../../../fonts/Prompt/Prompt-Bold.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Regular;
+  src: url(../../../fonts/Prompt/Prompt-Regular.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Thin;
+  src: url(../../../fonts/Prompt/Prompt-Thin.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Semibold;
+  src: url(../../../fonts/Prompt/Prompt-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Prompt-LightItalic;
+  src: url(../../../fonts/Prompt/Prompt-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Prompt-Medium;
+  src: url(../../../fonts/Prompt/Prompt-Medium.ttf);
+}
+
+@mixin font14($font-w) {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: $font-w;
+  @if $font-w >= 500 {
+    font-family: Prompt-Medium, sans-serif;
+  } @else if $font-w <= 300 {
+    font-family: Prompt-Thin, sans-serif;
+  } @else if $font-w >= 700 {
+    font-family: Prompt-Bold, sans-serif;
+  } @else if $font-w == 400 {
+    font-family: Prompt-Regular, sans-serif;
+  }
+}
+@mixin font16($font-w) {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: $font-w;
+  @if $font-w >= 500 {
+    font-family: Prompt-Medium, sans-serif;
+  } @else if $font-w <= 300 {
+    font-family: Prompt-Thin, sans-serif;
+  } @else if $font-w >= 700 {
+    font-family: Prompt-Bold, sans-serif;
+  } @else if $font-w == 400 {
+    font-family: Prompt-Regular, sans-serif;
+  }
+}
+
+@mixin font25($font-w) {
+  font-style: normal;
+  font-size: 25px;
+  line-height: 38px;
+  font-weight: $font-w;
+  @if $font-w >= 500 {
+    font-family: Prompt-Medium, sans-serif;
+  } @else if $font-w <= 300 {
+    font-family: Prompt-Thin, sans-serif;
+  } @else if $font-w >= 700 {
+    font-family: Prompt-Bold, sans-serif;
+  } @else if $font-w == 400 {
+    font-family: Prompt-Regular, sans-serif;
+  }
+}
+
+@mixin font30($font-w) {
+  font-size: 30px;
+  line-height: 45px;
+  font-style: normal;
+  font-weight: $font-w;
+  @if $font-w >= 500 {
+    font-family: Prompt-Medium, sans-serif;
+  } @else if $font-w <= 300 {
+    font-family: Prompt-Thin, sans-serif;
+  } @else if $font-w >= 700 {
+    font-family: Prompt-Bold, sans-serif;
+  } @else if $font-w == 400 {
+    font-family: Prompt-Regular, sans-serif;
+  }
+}
+
+@mixin font32($font-w) {
+  font-size: 32px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: $font-w;
+  @if $font-w >= 500 {
+    font-family: Prompt-Medium, sans-serif;
+  } @else if $font-w <= 300 {
+    font-family: Prompt-Thin, sans-serif;
+  } @else if $font-w >= 700 {
+    font-family: Prompt-Bold, sans-serif;
+  } @else if $font-w == 400 {
+    font-family: Prompt-Regular, sans-serif;
+  }
+}
+
+@mixin btn-style($bg-color, $color, $width, $height) {
+  background: $bg-color;
+  color: $color;
+  width: $width;
+  height: $height;
+  @include font16(400);
+  border-radius: 20px;
+  padding: 8px;
+  border: 1px solid transparent;
+  outline: 0;
+  appearance: none;
+  box-shadow: none;
+  cursor: pointer;
+  text-align: center;
+  transition: $transition;
+
+  &:hover:not(#dropdownAdd):not(.dropdown-item):not(.btn-calculate) {
+    @if $bg-color == $orange {
+      color: $orange;
+      background: #fff;
+      border: 1px solid;
+    } @else if $bg-color == $green {
+      color: $green;
+      border: 1px solid;
+      background: transparent;
+    }
+  }
+}

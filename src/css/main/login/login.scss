@@ -1,0 +1,102 @@
+@import '../../constants/constant.scss';
+
+.login-section {
+  min-height: 567px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 140px 20px 145px 20px;
+
+  .login-form {
+    .login-title {
+      @include font30(400);
+      text-align: center;
+      color: $green;
+    }
+
+    .btn-login {
+      @include btn-style($green, $white, 400px, 40px);
+      margin: 50px 0 8px 0;
+    }
+
+    .forgot {
+      justify-self: flex-start !important;
+      width: 400px;
+
+      .forgot-link {
+        color: $gray;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .register-title {
+    @include font30(400);
+    color: $green;
+    margin-bottom: 40px;
+  }
+
+  .btn-register {
+    @include btn-style($orange, $white, 400px, 40px);
+  }
+}
+
+/********************************* Form Group *********************************/
+
+.form-group {
+  height: auto !important;
+
+  .form-label {
+    transform: translate(40px, 38px);
+    color: $gray;
+    @include font14(400);
+    transition: $transition;
+    user-select: none;
+    pointer-events: none;
+
+    &.error {
+      color: $red;
+    }
+
+    &.active {
+      transform: translate(40px, 18px);
+      background: white;
+    }
+  }
+
+  .form-input {
+    box-shadow: none;
+    width: 400px;
+    height: 40px;
+    border: 2px solid $green;
+    border-radius: 20px;
+    padding: 6px 40px;
+    color: $gray;
+    @include font14(400);
+    text-shadow: none;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+      @include font14(400);
+    }
+
+  }
+
+  .error_msg {
+    color: $red;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 8px 0 0 12px;
+    margin: 0;
+    display: none;
+  }
+}
+
+/********************************* Form Group *********************************/

@@ -1,0 +1,280 @@
+@import '../../constants/constant';
+
+.create-account-section {
+  min-height: 300px;
+  padding: 120px 20px 120px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .create-account-form {
+    width: 100%;
+    max-width: 820px;
+
+    .create-title {
+      text-align: center;
+      @include font32(700);
+      color: $orange;
+      margin-bottom: 45px;
+    }
+
+    .form-label-new {
+      color: $green;
+      @include font14(400);
+      margin-left: 40px;
+    }
+
+    .form-input-new {
+      border: 2px solid $green;
+      border-radius: 20px;
+      box-shadow: none;
+      height: 40px;
+      padding: 0 40px;
+      color: $gray;
+
+      &.__textarea {
+        resize: none;
+        padding: 5px 40px;
+      }
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        @include font14(400);
+      }
+
+      filter: none !important;
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row !important;
+      border: 2px solid $green;
+      border-radius: 20px;
+      height: 40px;
+      padding: 0 20px;
+
+      select {
+        border: none;
+        appearance: none;
+        padding: 4px 8px;
+        margin-top: 6px;
+        text-transform: uppercase;
+        color: $gray;
+        @include font16(400);
+        background: url('../../../../assets/svgs/down-caret-gray.svg') 100% 50% no-repeat;
+        cursor: pointer;
+        outline: none;
+        width: 55px;
+      }
+
+      .form-input-id {
+        flex: 1;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        color: $gray;
+        padding: 6px 12px;
+        -moz-appearance: textfield;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          display: none;
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 30px white inset !important;
+          @include font14(400);
+        }
+      }
+    }
+
+    .password {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row !important;
+      border: 2px solid $green;
+      border-radius: 20px;
+      height: 40px;
+      padding: 0 20px;
+
+      .form-input-pass {
+        border: none;
+        flex: 1;
+        padding: 6px 12px;
+        outline: none;
+        appearance: none;
+        color: $gray;
+        @include font16(400);
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 30px white inset !important;
+          @include font14(400);
+        }
+      }
+
+      .btn-eye {
+        box-shadow: none;
+        width: 50px;
+        height: 100%;
+      }
+    }
+
+    .links-cover {
+      .btn-save-account {
+        @include btn-style($orange, $white, 400px, 40px);
+        margin-top: 40px;
+      }
+
+      .login-to-acc {
+        color: $gray;
+        align-self: flex-start;
+        padding: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+
+        a {
+          color: $orange;
+          transition: $transition;
+        }
+      }
+    }
+  }
+}
+
+.settings-form {
+  width: 100%;
+  margin-top: 120px;
+  margin-left: 120px;
+  .form-label-new {
+    color: $green;
+    @include font14(400);
+    margin-left: 40px;
+  }
+
+  .form-input-new {
+    border: 2px solid $green;
+    border-radius: 20px;
+    box-shadow: none;
+    height: 40px;
+    padding: 0 40px;
+    color: $gray;
+    margin-bottom: 20px;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+      @include font14(400);
+    }
+
+    filter: none !important;
+  }
+
+  .language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
+    border: 2px solid $green;
+    border-radius: 20px;
+    height: 40px;
+    padding: 0 20px;
+
+    select {
+      border: none;
+      appearance: none;
+      padding: 4px 8px;
+      margin-top: 6px;
+      text-transform: uppercase;
+      color: $gray;
+      @include font16(400);
+      background: url('../../../../assets/svgs/down-caret-gray.svg') 100% 50% no-repeat;
+      cursor: pointer;
+      outline: none;
+      width: 55px;
+    }
+
+    .form-input-id {
+      flex: 1;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      color: $gray;
+      padding: 6px 12px;
+      -moz-appearance: textfield;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        display: none;
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        @include font14(400);
+      }
+    }
+  }
+
+  .password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
+    border: 2px solid $green;
+    border-radius: 20px;
+    height: 40px;
+    padding: 0 20px;
+
+    .form-input-pass {
+      border: none;
+      flex: 1;
+      padding: 6px 12px;
+      outline: none;
+      appearance: none;
+      color: $gray;
+      @include font16(400);
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        @include font14(400);
+      }
+    }
+
+    .btn-eye {
+      box-shadow: none;
+      width: 50px;
+      height: 100%;
+    }
+  }
+
+  .btn-save-account {
+    @include btn-style($orange, $white, 400px, 40px);
+    margin-top: 60px;
+
+  }
+}

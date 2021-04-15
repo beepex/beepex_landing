@@ -1,0 +1,1068 @@
+@import "../../constants/constant";
+
+.dashboard-section {
+  padding: 80px 50px;
+
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1240px;
+
+    .dashboard-tab {
+      background: $cornsilk;
+      border-radius: 10px;
+      border: 1px solid $green;
+      padding: 25px 40px;
+      width: 295px;
+
+      @media (min-width: 1000px) {
+        padding: 25px 0 40px 25px;
+      }
+      .tab-item {
+        &.user-id {
+          color: $gray;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 33px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        list-style: none;
+
+        .tab-link {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          text-decoration: none;
+          transition: $transition;
+          padding: 8px 0 8px 10px;
+
+          &.active {
+            span {
+              color: $orange;
+            }
+          }
+
+          span {
+            flex: 1;
+            color: $gray;
+            @include font16(400);
+            margin-left: 17px;
+            font-family: Prompt-Regular, sans-serif;
+          }
+
+          &:hover {
+            span {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+
+    .right-side {
+      padding-left: 30px;
+      .districts {
+        .ss-main {
+          z-index: 200 !important;
+
+          .ss-single-selected {
+            z-index: 20 !important;
+          }
+        }
+      }
+      .on-country {
+        .ss-single-selected {
+          display: flex !important;
+          justify-content: flex-start;
+          align-items: center;
+          padding-left: 40px;
+
+          .placeholder {
+            text-align: left;
+            display: inline-block !important;
+          }
+        }
+      }
+      .packages {
+        .ss-main {
+          z-index: 220 !important;
+
+          .ss-single-selected {
+            z-index: 20 !important;
+          }
+        }
+      }
+      .balance-card {
+        padding: 30px 40px;
+        background: $cornsilk;
+        box-shadow: 5px 10px 0 $green;
+        border-radius: 10px;
+        height: 154px;
+        margin-right: 24px;
+        margin-bottom: 30px;
+
+        .balance-title {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 38px;
+          color: $green;
+          padding: 0 10px;
+          max-width: 100%;
+          overflow-x: auto;
+          white-space: nowrap;
+          scrollbar-width: thin;
+          scrollbar-color: $orange transparent;
+          &::-webkit-scrollbar {
+            height: 6px;
+          }
+          
+          &::-webkit-scrollbar-track {
+            background: transparent;
+          }
+          
+          &::-webkit-scrollbar-thumb {
+            background: $orange;
+          }
+          
+          &::-webkit-scrollbar-thumb:hover {
+            background: $orange;
+          }
+        }
+
+        .divider {
+          width: 100%;
+          height: 1px;
+          background: $orange;
+          margin-bottom: 16px;
+        }
+
+        .balance-info {
+          padding: 0 10px;
+          color: $gray;
+        }
+      }
+
+      .btn-order {
+        @include btn-style($orange, $white, 190px, 40px);
+        margin: 60px 20px 80px 0;
+      }
+
+      .btn-declare {
+        @include btn-style(transparent, $green, 190px, 40px);
+        margin: 60px 20px 80px 0;
+        padding: 6px !important;
+        border: 2px solid;
+      }
+
+      .link-country {
+        text-decoration: none;
+
+        .country-card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: column;
+          padding: 20px 0;
+          transition: $transition;
+          border-radius: 20px;
+
+          .country-flag {
+            margin-bottom: 30px;
+          }
+
+          .country-name {
+            color: $gray;
+            @include font16(400);
+          }
+        }
+      }
+
+      .order-number {
+        color: $orange;
+        opacity: 0.2;
+        margin-top: 48px;
+        font-style: normal;
+        font-size: 50px;
+        line-height: 76px;
+        font-weight: 700 !important;
+      }
+
+      .btn-remove-form {
+        @include btn-style($green, white, 40px, 40px);
+        margin-top: 48px;
+        border: 1px solid;
+        transition: $transition;
+
+        &:hover {
+          background: white;
+          color: $green;
+          border: 1px solid;
+        }
+      }
+
+      .select-dropdown {
+        .ss-main {
+          padding: 0;
+          color: $green !important;
+          border-radius: 20px;
+          border: none;
+          z-index: 3;
+
+          .ss-single-selected {
+            width: 100% !important;
+            outline: none;
+            box-shadow: none;
+            border-radius: 20px;
+            height: 40px;
+            border: 2px solid $green;
+
+            &.ss-open-above ~ .ss-content {
+              padding: 10px 40px 30px 40px;
+              border-radius: 20px 20px 0 0;
+              top: 60px;
+            }
+
+            .ss-disabled {
+              @include font14(400);
+              color: $gray !important;
+              padding: 0;
+            }
+
+            .placeholder {
+              padding: 8px 0 8px 12px;
+              color: $gray !important;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          .ss-content {
+            background: $green;
+            top: 20px;
+            border-radius: 0 0 20px 20px;
+            border: 2px solid $green;
+            padding: 30px 20px 10px 20px;
+            z-index: -2;
+
+            .ss-list {
+              max-height: 400px;
+              text-align: center;
+
+              &::-webkit-scrollbar {
+                margin: 0;
+                background: transparent;
+                width: 3px;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                background: $orange;
+              }
+            }
+
+            .ss-option {
+              @include font14(400);
+              color: white;
+
+              &:hover {
+                background: transparentize($green, 0.8);
+              }
+
+              &.ss-option-selected,
+              &.ss-option-disabled {
+                background: transparent;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+
+      .form-group {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .form-input {
+          width: 100%;
+        }
+
+        .form-label {
+          position: absolute;
+          white-space: nowrap;
+          top: -28px;
+          left: 30px;
+
+          &.active {
+            top: -25px;
+          }
+        }
+      }
+
+      .total-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px 50px 0 0;
+        @include font16(400);
+
+        p {
+          &:first-child {
+            color: $gray;
+            margin-right: 10px;
+          }
+
+          &:last-child {
+            color: $orange;
+          }
+        }
+      }
+
+      .btn-add-link {
+        @include btn-style($orange, $white, 295px, 40px);
+        margin-right: 20px;
+        margin-top: 58px;
+      }
+
+      .btn-send-order {
+        @include btn-style($green, $white, 295px, 40px);
+        margin-top: 58px;
+      }
+
+      /******************************* Declaration Form ********************************/
+      .nav-pills#countries-tab {
+        border: 2px solid $orange;
+        border-radius: 700px;
+        margin-top: 50px;
+
+        .nav-item {
+          .nav-link {
+            @include btn-style($white, $green, 190px, 40px);
+            transition: $transition;
+            margin: 0;
+
+            &.active {
+              background: $orange;
+              color: $white;
+            }
+          }
+        }
+      }
+
+      .declaration-form {
+        margin-top: 60px;
+
+        .warehouse {
+          .ss-main {
+            z-index: 200 !important;
+
+            .ss-single-selected {
+              z-index: 20 !important;
+
+              background: #fff url("../../../../assets/svgs/down-caret-gray.svg") no-repeat 90% 50%;
+
+              .ss-arrow {
+                display: none;
+              }
+            }
+          }
+        }
+
+        input[type="file"] {
+          display: none;
+        }
+
+        input[type="number"] {
+          -moz-appearance: textfield;
+          margin: 0;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+          display: none;
+          appearance: none;
+        }
+
+        /******************************* Select Styles ********************************/
+
+        .select_product_type {
+          position: relative;
+
+          .ss-multi-selected {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: $orange transparent;
+
+            &::-webkit-scrollbar {
+              margin: 0;
+              background: transparent;
+              width: 3px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              background: $orange;
+            }
+
+            .ss-value {
+              background: white;
+              border: 1px solid $orange;
+              color: $orange;
+              border-radius: 60px;
+              @include font14(400);
+              padding: 2px 11px;
+            }
+          }
+        }
+
+        .ss-main {
+          padding: 0;
+          color: $gray !important;
+          border-radius: 20px;
+          border: none;
+          z-index: 3;
+
+          .ss-single-selected,
+          .ss-multi-selected {
+            width: 100%;
+            margin: 0;
+            background: white;
+            outline: none;
+            box-shadow: none;
+            border-radius: 20px;
+            height: 40px;
+            border: 2px solid $green;
+            padding: 5px 40px;
+
+            &.ss-open-above ~ .ss-content {
+              padding: 10px 40px 30px 40px;
+              border-radius: 20px 20px 0 0;
+              top: 60px;
+            }
+
+            .ss-disabled {
+              @include font14(400);
+              color: $gray;
+              padding: 0;
+            }
+
+            .placeholder {
+              padding: 8px 0 8px 12px;
+              color: $gray;
+            }
+          }
+
+          .ss-content {
+            background: $green;
+            top: 20px;
+            border-radius: 0 0 20px 20px;
+            border: 2px solid $green;
+            padding: 30px 20px 10px 40px;
+            z-index: -2;
+
+            .ss-list {
+              max-height: 180px;
+              overflow-y: auto;
+              scrollbar-width: thin;
+              scrollbar-color: $orange transparent;
+
+              &::-webkit-scrollbar {
+                margin: 0;
+                background: transparent;
+                width: 3px;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                background: $orange;
+              }
+            }
+
+            .ss-option {
+              @include font14(400);
+              color: white;
+              transition: $transition;
+
+              &:hover {
+                background: transparentize($green, 0.8);
+                color: $orange;
+              }
+
+              &.ss-option-selected,
+              &.ss-option-disabled {
+                background: transparent;
+                color: white;
+              }
+            }
+          }
+        }
+
+        /******************************* Select Styles ********************************/
+
+        .document-field {
+          background: $white;
+          color: $gray;
+          border-radius: 20px;
+          border: 2px solid $green;
+          width: 100%;
+          height: 40px;
+          background: transparent url("../../../../assets/svgs/file.svg") no-repeat 86% 50%;
+
+          &::placeholder {
+            color: $gray;
+          }
+
+          input[type="file"] {
+            width: 100%;
+            display: block;
+            opacity: 0;
+          }
+        }
+
+        .isLiquid {
+          width: 380px;
+          margin-top: 10px;
+          color: $gray;
+          @include font16(400);
+          user-select: none;
+          display: flex;
+          align-items: center;
+          position: relative;
+          cursor: pointer;
+
+          .label_text {
+            margin-left: 15px;
+          }
+
+          .custom-checkbox {
+            margin-right: 10px;
+            box-shadow: none;
+            color: $orange;
+            border: none;
+            outline: none;
+            appearance: none;
+
+            ~ .checkbox {
+              width: 16px;
+              height: 16px;
+              background: #f9f6f1;
+              border: 1px solid $green;
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              transition: $transition;
+            }
+
+            &:checked ~ .checkbox {
+              background: $green;
+            }
+          }
+        }
+
+        .btn-send-declaration {
+          @include btn-style($green, white, 400px, 40px);
+          margin-top: 40px;
+          text-decoration: none;
+        }
+      }
+
+      /******************************* Declaration Form ********************************/
+
+      .btn-add-order {
+        @include btn-style($orange, #fff, 190px, 40px);
+        margin: 45px 20px 0 0;
+        text-decoration: none;
+      }
+
+      .filter_field {
+        margin-top: 60px;
+
+        .ss-main {
+          padding: 0;
+          color: $green !important;
+          border-radius: 20px;
+          border: none;
+          z-index: 3;
+          width: 210px;
+
+          .ss-single-selected {
+            width: 210px;
+            margin: 0;
+            outline: none;
+            box-shadow: none;
+            border-radius: 20px;
+            height: 40px;
+            border: 2px solid $green;
+            background: white url("../../../../assets/svgs/down-caret.svg") no-repeat 90% 50%;
+
+            .ss-arrow {
+              margin: 0 10px;
+              opacity: 0;
+            }
+
+            &.ss-open-above ~ .ss-content {
+              padding: 10px 40px 30px 40px;
+              border-radius: 20px 20px 0 0;
+              top: 60px;
+            }
+
+            .ss-disabled {
+              @include font14(400);
+              color: $green !important;
+              padding: 0;
+            }
+
+            .placeholder {
+              padding: 8px 0 8px 12px;
+              color: $green !important;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          .ss-content {
+            background: $green;
+            top: 20px;
+            border-radius: 0 0 20px 20px;
+            border: 2px solid $green;
+            padding: 30px 20px 10px 20px;
+            z-index: -2;
+
+            .ss-list {
+              max-height: 400px;
+              text-align: center;
+
+              &::-webkit-scrollbar {
+                margin: 0;
+                background: transparent;
+                width: 3px;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                background: $orange;
+              }
+            }
+
+            .ss-option {
+              @include font14(400);
+              color: white;
+              transition: $transition;
+
+              &:hover {
+                background: transparentize($green, 0.8);
+                color: $orange;
+              }
+
+              &.ss-option-selected,
+              &.ss-option-disabled {
+                background: transparent;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+
+      .table-responsive-xl {
+        scrollbar-width: thin;
+        scrollbar-color: $orange transparent;
+
+        &::-webkit-scrollbar-track {
+          background: $cornsilk;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $orange;
+        }
+
+        &::-webkit-scrollbar {
+          background: $orange;
+          height: 3px;
+        }
+      }
+
+      .orders-table {
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        margin-top: 20px;
+
+        thead {
+          background: transparent;
+
+          th {
+            padding: 16px 10px;
+            color: $gray;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+          }
+        }
+
+        tbody {
+          tr {
+            position: relative;
+            height: 64px;
+
+            td {
+              padding: 30px 20px;
+              background: $cornsilk;
+              @include font14(400);
+              color: $gray;
+              margin-bottom: 10px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow-x: hidden;
+              &.order-id {
+                color: $orange;
+              }
+
+              &.declaration-text {
+                color: #00c2ff;
+              }
+
+              .order-link {
+                text-overflow: ellipsis;
+                width: 210px;
+                white-space: nowrap;
+                display: inline-block;
+                overflow: hidden;
+                color: $gray;
+              }
+
+              .btn-pay {
+                color: $red;
+                text-decoration: none;
+              }
+
+              .btn-paid {
+                color: $greenish;
+                text-decoration: none;
+              }
+
+              &:first-child {
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                background: red;
+                background: $cornsilk;
+              }
+
+              &:last-child {
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background: red;
+                background: $cornsilk;
+              }
+            }
+
+            /*  &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 40px;
+                border-radius: 10px;
+                z-index: -1;
+            }*/
+          }
+        }
+      }
+
+      .paid-order-table {
+        background: $cornsilk;
+        margin-top: 80px;
+        padding: 60px 80px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        p {
+          margin-top: 20px;
+          color: $green;
+
+          &.paid-text {
+            color: $greenish;
+          }
+
+          span,
+          a {
+            color: $gray;
+            margin-left: 16px;
+          }
+
+          .declaration-text {
+            color: #00c2ff;
+          }
+
+          &.order-link {
+            display: flex;
+            align-items: center;
+            padding: 0;
+
+            span {
+              color: $green;
+              margin: 0;
+            }
+
+            a {
+              max-width: 240px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+
+          &:last-child {
+            span,
+            a {
+              margin-top: 0;
+            }
+          }
+        }
+
+        .btn-trash {
+          padding: 5px 10px;
+          margin-left: 30px;
+          margin-bottom: 5px;
+        }
+
+        .btn-pay {
+          @include btn-style($green, white, 295px, 40px);
+          display: inline-block;
+          margin-left: 0;
+          text-decoration: none;
+        }
+      }
+
+      .foreign-address-info {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 5px;
+        margin-top: 20px;
+
+        &-container {
+          display: flex;
+          flex-flow: column;
+          justify-content: flex-start;
+          padding: 10px 20px;
+          border-radius: 4px;
+          transition: $transition;
+          cursor: pointer;
+
+          &:hover {
+            box-shadow: 2px 2px 10px rgba($green, 0.2);
+          }
+
+          &-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $green;
+            font-style: normal;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+          }
+
+          &-info {
+            color: $gray;
+            @include font14(400);
+            max-width: 92%;
+          }
+        }
+      }
+
+      .balance-form {
+        margin: 80px 0 140px 0;
+
+        &-text {
+          margin: 2px 0 0 20px;
+          color: $gray;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 27px;
+        }
+
+        &-select {
+          input[type="text"] {
+            margin-left: 20px;
+            background: transparent;
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            width: 190px;
+            height: 40px;
+            border: 2px solid;
+            box-sizing: border-box;
+            border-radius: 20px;
+            box-shadow: none;
+            color: $green;
+            text-shadow: none;
+
+            &::placeholder {
+              color: $green;
+            }
+          }
+
+          .ss-main {
+            padding: 0;
+            color: $white !important;
+            border-radius: 20px;
+            border: none;
+            z-index: 3;
+            width: 210px;
+
+            .ss-single-selected {
+              width: 210px;
+              margin: 0;
+              outline: none;
+              box-shadow: none;
+              border-radius: 20px;
+              height: 40px;
+              border: 2px solid $orange;
+              background: $orange url("../../../../assets/svgs/down-caret-white.svg") no-repeat 90% 50%;
+
+              .ss-arrow {
+                margin: 0 10px;
+                opacity: 0;
+              }
+
+              &.ss-open-above ~ .ss-content {
+                padding: 10px 40px 30px 40px;
+                border-radius: 20px 20px 0 0;
+                top: 60px;
+              }
+
+              .ss-disabled {
+                color: white !important;
+              }
+
+              .placeholder {
+                padding: 8px 0 8px 12px;
+                color: white !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+
+            .ss-content {
+              background: $white;
+              top: 20px;
+              border-radius: 0 0 20px 20px;
+              border: 2px solid $orange;
+              padding: 30px 20px 10px 20px;
+              z-index: -2;
+
+              .ss-list {
+                max-height: 400px;
+                text-align: center;
+
+                &::-webkit-scrollbar {
+                  margin: 0;
+                  background: transparent;
+                  width: 3px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                  background: $orange;
+                }
+              }
+
+              .ss-option {
+                @include font14(400);
+                color: $orange;
+
+                &:hover {
+                  background: transparent;
+                }
+
+                &.ss-option-selected,
+                &.ss-option-disabled {
+                  background: white;
+                  color: $orange;
+                }
+              }
+            }
+          }
+        }
+
+        .btn-increase {
+          @include btn-style($green, white, 420px, 40px);
+          display: block;
+        }
+      }
+
+      .balance-table {
+        .table {
+          border-collapse: separate;
+          border-spacing: 0 10px;
+
+          thead {
+            th {
+              padding: 12px 80px;
+            }
+
+            color: $gray;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            text-shadow: none;
+          }
+
+          tbody {
+            tr {
+              td {
+                padding: 22px 80px;
+                background: $cornsilk;
+                color: $gray;
+                white-space: nowrap !important;
+
+                &.amount-negative {
+                  color: $red;
+                }
+
+                &.amount-positive {
+                  color: $greenish;
+                }
+
+                &.amount-balanced {
+                  color: $gray;
+                }
+
+                &:first-child {
+                  border-top-left-radius: 10px;
+                  border-bottom-left-radius: 10px;
+                }
+
+                &:last-child {
+                  border-top-right-radius: 10px;
+                  border-bottom-right-radius: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

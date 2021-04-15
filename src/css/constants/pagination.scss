@@ -1,0 +1,239 @@
+.pagination {
+    font-size: 0;
+    text-align: center;
+    ul {
+        display: flex;
+        align-items: center;
+    }
+    a {
+        border: none;
+        border-radius: 50%;
+        display: inline-block;
+        width: 54px;
+        height: 54px;
+        padding-top: 12px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // width: 54px;
+        // height: 54px;
+        box-shadow: none;
+        margin: 0 2px;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 30px;
+        background-color: transparent;
+        color: #ffa305;
+        text-decoration: none;
+
+        &.next {
+            color: #ffa305;
+        }
+        &.prev,
+        &.next {
+            width: 54px;
+            height: 54px;
+            margin-bottom: 15px;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        &:hover {
+            background: #ffa305;
+            color: #fff !important;
+        }
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        &.active {
+            a {
+                background: #ffa305;
+                color: #fff !important;
+
+                &:hover {
+                    text-decoration: none;
+                    cursor: default;
+                }
+            }
+        }
+    }
+
+    .prev,
+    .next {
+        img {
+            margin: 0 10px;
+        }
+        &.disabled {
+            display: none;
+
+            &:hover {
+                cursor: default;
+                text-decoration: none;
+            }
+        }
+    }
+    .prev {
+        margin-right: 2.5px;
+    }
+    .next {
+        margin-left: 2.5px;
+    }
+
+    @mixin ellipsis($before: true) {
+        content: "\2026";
+        font-size: 24px;
+        display: inline-block;
+        @if ($before) {
+            margin-right: 2.5px;
+        } @else {
+            margin-left: 2.5px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        li {
+            &:first-child,
+            &.active,
+            &.active-sibling:nth-last-child(2),
+            &:last-child {
+                display: inline-block !important;
+            }
+
+            $how-many-on-ends: 3;
+            &:first-child:nth-last-child(n + 6) {
+                & ~ li {
+                    display: none;
+
+                    &:nth-last-child(-n + #{$how-many-on-ends}) {
+                        display: inline-block;
+                    }
+
+                    &:nth-last-child(#{$how-many-on-ends}) {
+                        &:before {
+                            @include ellipsis(true);
+                        }
+                    }
+                }
+
+                &.active,
+                & ~ li.active {
+                    &:before {
+                        @include ellipsis(true);
+                    }
+                    &:after {
+                        @include ellipsis(false);
+                    }
+
+                    &:nth-child(-n + #{$how-many-on-ends - 1}),
+                    &:nth-last-child(-n + #{$how-many-on-ends - 1}) {
+                        &:before,
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    & ~ li:nth-last-child(-n + #{$how-many-on-ends}) {
+                        display: none;
+                    }
+
+                    & ~ li:nth-child(-n + #{$how-many-on-ends}) {
+                        display: inline-block;
+                    }
+
+                    & ~ li:nth-child(-n + #{$how-many-on-ends - 1}) {
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    & ~ li:nth-child(#{$how-many-on-ends}) {
+                        &:after {
+                            @include ellipsis(false);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        li {
+            &:first-child,
+            &.active-sibling,
+            &.active,
+            &.active + li,
+            &:last-child {
+                display: inline-block !important;
+            }
+
+            &:first-child:nth-last-child(n + 8) {
+                $how-many-on-ends: 5;
+
+                & ~ li {
+                    display: none;
+
+                    &.active-sibling:before {
+                        @include ellipsis(true);
+                    }
+                    &.active + li:after {
+                        @include ellipsis(false);
+                    }
+
+                    &:nth-last-child(-n + #{$how-many-on-ends}) {
+                        display: inline-block;
+                    }
+
+                    &:nth-last-child(#{$how-many-on-ends}) {
+                        &:before {
+                            @include ellipsis(true);
+                        }
+                    }
+
+                    &:nth-child(-n + #{$how-many-on-ends - 3}),
+                    &:nth-last-child(-n + #{$how-many-on-ends - 3}),
+                    &.active-sibling:nth-last-child(-n + #{$how-many-on-ends - 1}) {
+                        &:before,
+                        &:after {
+                            display: none !important;
+                        }
+                    }
+                }
+
+                &.active,
+                & ~ li.active {
+                    & ~ li:nth-last-child(-n + #{$how-many-on-ends}) {
+                        display: none;
+
+                        &:before {
+                            display: none;
+                        }
+                    }
+
+                    & ~ li:nth-child(-n + #{$how-many-on-ends}) {
+                        display: inline-block;
+                    }
+
+                    & ~ li:nth-child(-n + #{$how-many-on-ends - 1}) {
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    & ~ li:nth-child(#{$how-many-on-ends}) {
+                        &:after {
+                            @include ellipsis(false);
+                        }
+                    }
+
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

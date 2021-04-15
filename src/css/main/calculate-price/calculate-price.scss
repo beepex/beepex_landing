@@ -1,0 +1,163 @@
+@import '../../constants/constant';
+
+.calculate-price-section {
+  min-height: 831px;
+  padding: 120px 20px;
+
+  .img-cover {
+    width: 100%;
+    height: 100%;
+
+    img {
+      object-fit: cover;
+      width: 110%;
+      height: 110%;
+    }
+  }
+
+  .calculate-title {
+    @include font32(700);
+    color: $orange;
+    margin-top: 80px;
+    font-family: Prompt-Regular, sans-serif;
+  }
+
+  .dropdown-country {
+    margin-top: 30px;
+
+    .ss-main {
+      padding: 0;
+      color: $white !important;
+      border-radius: 20px;
+      border: none;
+      z-index: 3;
+      width: 210px;
+
+      .ss-single-selected {
+        width: 210px;
+        margin: 0;
+        outline: none;
+        box-shadow: none;
+        border-radius: 20px;
+        height: 40px;
+        border: 2px solid $orange;
+        background: $orange url("../../../../assets/svgs/down-caret-white.svg") no-repeat 90% 50%;
+
+
+        .ss-arrow {
+          margin: 0 10px;
+          opacity: 0;
+        }
+
+        &.ss-open-above ~ .ss-content {
+          padding: 10px 40px 30px 40px;
+          border-radius: 20px 20px 0 0;
+          top: 60px;
+
+        }
+
+        .ss-disabled {
+          color: white !important;
+        }
+
+        .placeholder {
+          padding: 8px 0 8px 12px;
+          color: white !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .ss-content {
+        background: $white;
+        top: 20px;
+        border-radius: 0 0 20px 20px;
+        border: 2px solid $orange;
+        padding: 20px 20px 10px 20px;
+        z-index: -2;
+
+        .ss-list {
+          max-height: 400px;
+          text-align: center;
+
+          &::-webkit-scrollbar {
+            margin: 0;
+            background: transparent;
+            width: 3px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: $orange;
+          }
+        }
+
+        .ss-option {
+          @include font14(400);
+          color: $orange;
+
+          &:hover {
+            background: transparent;
+          }
+
+          &.ss-option-selected,
+          &.ss-option-disabled {
+            background: white;
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  .form-label__weight {
+    position: absolute;
+    @include font14(400);
+    transition: $transition;
+    top: 63px;
+    left: 100px;
+    z-index: 2;
+    color: $green;
+
+    &.active-label {
+      opacity: 0;
+      user-select: none;
+    }
+  }
+
+  .form-input__weight {
+    box-shadow: none;
+    width: 190px;
+    height: 40px;
+    border: 2px solid $green;
+    border-radius: 20px;
+    padding: 6px 40px;
+    color: $gray;
+    @include font14(400);
+    text-align: center;
+    position: relative;
+    margin-top: 55px;
+
+    &.active-input {
+      background: $orange;
+      color: $white;
+      border: 2px solid $orange;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+      @include font14(400);
+    }
+
+  }
+
+  .btn-calculate {
+    @include btn-style($green, $white, 432px, 40px);
+    margin-top: 20px;
+    cursor: auto !important;
+  }
+}
+
